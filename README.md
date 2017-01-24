@@ -14,7 +14,7 @@ There are a couple ways to download Skeleton:
 ## SkinAndBones-Skeleton
 SkinAndBones-Skeleton is a template based on the Skeleton boilerplate. It was developed to flesh out the basic boilerplate with common features of a basic website, such as a slideshow and navigation, turning it into more of a UI framework, for use in quickly comping up a functional website.
 
-CSS and JavaScript for various components are added as seperate files so they can be added or deleted as quickly, as necessary.
+CSS and JavaScript for various components are added as seperate files so they can be added or deleted as quickly, as necessary. For instance, 'styles-basic.css' containes the code for links, buttons, forms, lists, code, tables, spacing and utilities. The file is in the project, but not linked to the html, so that those things can be copied and pasted into the 'base.css' as needed. 
 
 ### What's in the download?
 
@@ -27,6 +27,7 @@ Skeleton/
 ├── css/
 │   ├── normalize.min.css
 │   ├── base.css
+│   ├── styles-basic.css
 │   └── skeleton.css
 ├── fonts/
 └── images/

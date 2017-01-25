@@ -42,10 +42,22 @@ Skeleton/
 The basic Skeleton boilerplate is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more.
 
 SkinAndBones-Skeleton adds:
-A Better Simple Slideshow
-Side navigation with and without multilevel accordion menus
-Additional folders to aid in organization
-The grid and basic style codes are seperated
+- A Better Simple Slideshow
+- Side navigation with and without multilevel accordion menus
+- Additional folders to aid in organization
+- The grid and basic style codes are seperated
+
+# A Better Simple Slideshow
+This is a fairly basic slideshow, written in javascript. This is a dual-purpose project, it's meant to be something you can drop right into your page and use if you so choose, but it's also meant as an example/tutorial script showing how to build a simple DIY slideshow from scratch on your own. [Here is a tutorial/walkthrough](http://themarklee.com/2014/10/05/better-simple-slideshow/).
+
+## Features
+* fully responsive
+* option for auto-advancing slides, or manually advancing by user
+* multiple slideshows per-page
+* supports arrow-key navigation
+* full-screen toggle using HTML5 fullscreen api
+* swipe events supported on touch devices (requires [hammer.js](https://github.com/hammerjs/hammer.js))
+* written in vanilla JS--this means no jQuery dependency (much :sparkling_heart: for [jQuery](https://github.com/jquery/jquery) though!)
 
 ## Browser support
 

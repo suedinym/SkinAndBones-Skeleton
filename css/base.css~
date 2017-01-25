@@ -6,6 +6,15 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+  figure, figcaption  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+} 
 
 
 /* Table of contents
@@ -14,8 +23,6 @@
 - Typography
 - Media Queries
 */
-
-
 
 
 /* Base Styles

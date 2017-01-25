@@ -19,10 +19,12 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/normalize.css">  
   <link rel="stylesheet" href="css/skeleton.css">
-   <link rel="stylesheet" href="css/base.css">
-   
+    <link rel="stylesheet" href="css/base.css"> 
+   <link rel="stylesheet" href="css/simple-slideshow-styles.css">
+  
+         
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -35,15 +37,73 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+ <div class="container">
+  		<!-- A Better Simple Slideshow Used here
+    ================================================== -->
+		<div class="sixteen columns">
+			<div class="bss-slides num1" tabindex="1">
+				<figure>
+					<img src="images/slides/skel-slide1.jpg" width="100%">
+					<figcaption>
+						Anterior
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/slides/skel-slide2.jpg" width="100%">
+					<figcaption>
+						Right Side
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/slides/skel-slide3.jpg" width="100%">
+					<figcaption>
+						Posterior
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/slides/skel-slide4.jpg" width="100%">
+					<figcaption>
+						Left Side
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<hr>
+		<!-- slideshow  end-->
+		 
     <div class="row">
       <div class="one-half column" style="margin-top: 25%">
         <h4>Basic Page</h4>
         <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      
       </div>
     </div>
   </div>
 
+	<!-- Slideshow js
+================================================== -->
+	<script src="js/hammer.min.js">
+	</script><!-- for swipe support on touch interfaces -->
+	<script src="js/better-simple-slideshow.min.js">
+	</script> 
+	<script>
+	var opts = {
+	   auto : {
+	       speed : 3500, 
+	       pauseOnHover : true
+	   },
+	   fullScreen : false, 
+	   swipe : true
+	};
+	makeBSS('.num1', opts);
+
+	var opts2 = {
+	   auto : false,
+	   fullScreen : true,
+	   swipe : true
+	};
+	makeBSS('.num2', opts2);
+	</script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

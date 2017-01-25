@@ -159,86 +159,72 @@ ul.top-bar {
 /* sliding  navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* The side navigation menu */
-#mySidenav {
-	margin-top: 3rem;
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    padding-top: 6rem; /* Place content 60px from the top */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-/* The top navigation menu */
-#myTopNav {
-	 height: ; 0;  /* 0 height - change this with JavaScript */
-	 overflow-y: hidden;
-    width: 100%;  /* 100% Full-width */
-}
-.topNav-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+#slidingTopNav.overlay {
+    height: 0%;
+    width: 100%;
+   
 }
 
-/* The side navigation menu */
-.overlay {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top of the slideshow, but below the nav bar */
+#slidingSideNav.overlay {
+    height: 100%;
+    width: 0%;
+}
+
+.overlay { 
+    margin-top: 4.5rem;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;}
+
+.top-overlay-content,.side-overlay-content {
+	 position: relative;
+    top: 5%;
+    width: 100%;
+    margin-top: 3rem;
 }
 
-/* The side navigation menu links */
+.top-overlay-content  {
+    text-align: center; 
+}
+
+.side-overlay-content  {
+    text-align: left;
+   }
+
 .overlay a {
- padding: 1rem 3rem;
+    padding: 1rem 3rem;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 24px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
 }
 
-
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .offcanvas a:focus{
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-#mySidenav .closebtn {
+.topClosebtn {
     position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-    font-size: 3.5rem;
-    margin-left: 5rem;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
-/* Position and style the close button (top right corner) */
-#myTopNav .closebtn {
+.sideClosebtn {
     position: absolute;
-    top: 3rem;
-    right: 2.5rem;
-    font-size: 3.5rem;
-    margin-left: 5rem;
-}
-@media only screen and (max-width: 479px) {
-	.overlay .closebtn {
-    top: .75rem;
-    right: 1.5rem;
-    font-size: 2.5rem;
-    margin-left: 5rem;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
-
-/* On smaller screens, where height is less than 450px, 
-change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .overlay {padding: 1.5rem 0 1.5rem 0;}
-    .overlay a {font-size: 1.5rem;}
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
 }
 /* #Footer
 ================================================== */

@@ -1,23 +1,16 @@
-/* Sliding side navigation */
-/* Set the width of the side navigation to 40% */
-function openSideNav() {
-    document.getElementById("mySidenav").style.width = "40%";
-   
-}
-
-/* Set the width of the side navigation to 0 */
-function closeSideNav() {
-    document.getElementById("mySidenav").style.width = "0";
-     
-}
-
 /* Sliding top navigation */
-/* Open */
 function openTopNav() {
-    document.getElementById("myTopNav").style.height = "40%";
+    document.getElementById("slidingTopNav").style.height = "100%";
 }
 
-/* Close */
 function closeTopNav() {
-    document.getElementById("myTopNav").style.height = "0%";
+    document.getElementById("slidingTopNav").style.height = "0%";
+}
+/* Sliding side navigation */
+function openSideNav() {
+    document.getElementById("slidingSideNav").style.width = "40%";
+}
+
+function closeSideNav() {
+    document.getElementById("slidingSideNav").style.width = "0%";
 }

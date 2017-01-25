@@ -18,30 +18,36 @@ CSS and JavaScript for various components are added as seperate files so they ca
 
 ### What's in the download?
 
-The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
+The original download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
 
 ```
 Skeleton/
 ├── index.html
 ├── js/
-│   ├── better-simple-slideshow.js (Slideshow only requires one of these.)
-│   ├── better-simple-slideshow.min.js
-│   └── hammer.min.js
+│   ├── *better-simple-slideshow.js (Slideshow only requires one of these.)
+│   ├── *better-simple-slideshow.min.js (Slideshow only requires one of these.)
+│   ├── site.js
+│   └── *hammer.min.js
 ├── css/
-│   ├── normalize.min.css
+│   ├── *normalize.min.css
 │   ├── base.css
-│   ├── simple-slideshow-styles.css
-│   ├── styles-basic.css
-│   └── skeleton.css
+│   ├── *simple-slideshow-styles.css
+│   ├── styles-basic.css (holds the basic skeleton styles you may want to add back in)
+│   └── *skeleton.css
+├── pages/
+│   ├── sliding-side-nav.html
+│   └── sliding-top-nav.html
 ├── fonts/
 └── images/
-    └── favicon.ico
+    └── favicon.ico, logo.png
       ├── icons/
       |  └── enlarge.svg, info.png
       └── slides/
        └── skel-slides 1 thru 4
 
 ```
+
+It looks like a lot, but the good news is that you probably won't want or need to change much if anything in the files with an asterisk * next to them.
 
 ### Why it's awesome
 

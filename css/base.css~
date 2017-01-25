@@ -145,6 +145,7 @@ ul.top-bar {
 	float: left;
 	border-radius: 10%;
 	box-shadow: .5rem .5rem 1rem #414a49;
+	z-index: -1;
 }
 .logo-header {
 	margin-top: 5rem;
@@ -171,7 +172,7 @@ ul.top-bar {
 }
 
 .overlay { 
-margin-top: 5rem;
+    margin-top: 4.5rem;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -222,6 +223,16 @@ margin-top: 5rem;
     font-size: 60px;
 }
 
+.sideClosePushbtn {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 60px;
+}
+#main-push {
+    transition: margin-left .5s;
+    padding: 16px;
+}
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}

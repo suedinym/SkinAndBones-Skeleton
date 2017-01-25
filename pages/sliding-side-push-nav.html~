@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Sliding Top Navigation</title>
+  <title>Sliding Side-Push Navigation</title>
   <meta name="description" content="">
   <meta name="author" content="sue" >
 
@@ -28,7 +28,7 @@
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <!-- Faviconc
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
@@ -39,8 +39,8 @@
 <header>
 <div>
 <ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openTopNav()">&#9776;</span></li>
-  <li><a href="#home"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+  <li>	<span class="hamburger" onclick="openPushNav()">&#9776;</span></li>
+  <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="#project1">Item 1</a></li>
   <li><a href="#project2">Item 2</a></li> 
   <li><a href="#project3">Item 3</a></li>
@@ -50,25 +50,32 @@
 </header>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="slidingTopNav" class="overlay">
-  <a href="javascript:void(0)" class="topClosebtn" onclick="closeTopNav()">&times;</a>
-  <div class="top-overlay-content">
+  <a href="#">Clients</a> -->
+  
+  <!-- The overlay -->
+ <!-- Overlay content -->
+<div id="slidingSideNav" class="overlay">
+  <a href="javascript:void(0)" class="sideClosebtn" onclick="closePushNav()">&times;</a>
+  <div class="side-overlay-content">
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
   </div>
 </div>
+  
+
+<div id="main-push">
 <header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
 			<h1>Skin and Bones Skeleton</h1>
-					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
+					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5></div>
 			</header>
-		</div><br class="clear">
+		<br class="clear">
 <hr>
  <div class="container">
- <div class="main">
+
   		<!-- A Better Simple Slideshow Used here
     ================================================== -->
 		<div class="sixteen columns">
@@ -110,7 +117,7 @@
       </div>
     </div>
     </div>
-  </div>
+  
   <!-- end container -->
   <hr>
 	<!-- Footer Container
@@ -121,6 +128,8 @@
 			&copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
 			All Rights Reserved</p>
 		</div>
+		</div>
+		
 	</footer><!-- end footer container -->
   
   

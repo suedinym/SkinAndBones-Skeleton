@@ -1,4 +1,4 @@
-SkinAndBones-Skeleton is an unofficial version of Dave Gamache's Skeleton Framework, based on a stable version of Skeleton 2.0.4
+SkinAndBones-Skeleton is an unofficial version of Dave Gamache's Skeleton Framework, based on a stable version of Skeleton 2.0.4. It was originally based on Version 1.2.
 
 # [Skeleton](http://getskeleton.com)
 Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
@@ -24,16 +24,22 @@ The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon
 Skeleton/
 ├── index.html
 ├── js/
+│   ├── better-simple-slideshow.js (Slideshow only requires one of these.)
+│   ├── better-simple-slideshow.min.js
+│   └── hammer.min.js
 ├── css/
 │   ├── normalize.min.css
 │   ├── base.css
+│   ├── simple-slideshow-styles.css
 │   ├── styles-basic.css
 │   └── skeleton.css
 ├── fonts/
 └── images/
     └── favicon.ico
       ├── icons/
-      └── slides
+      |  └── enlarge.svg, info.png
+      └── slides/
+       └── skel-slides 1 thru 4
 
 ```
 
@@ -79,12 +85,11 @@ All parts of Skeleton are free to use and abuse under the [open-source MIT licen
 Skeleton was built using [Sublime Text 3](http://www.sublimetext.com/3) and designed with [Sketch](http://bohemiancoding.com/sketch). The typeface [Raleway](http://www.google.com/fonts/specimen/Raleway) was created by [Matt McInerney](http://matt.cc/) and [Pablo Impallari](http://www.impallari.com/). Code highlighting by Google's [Prettify library](https://code.google.com/p/google-code-prettify/). Icons in the header of the documentation are all derivative work of icons from [The Noun Project](http://thenounproject.com). [Feather](http://thenounproject.com/term/feather/22073) by Zach VanDeHey, [Pen](http://thenounproject.com/term/pen/21163) (with cap) by Ed Harrison, [Pen](http://thenounproject.com/term/pen/32847) (with clicker) by Matthew Hall, and [Watch](http://thenounproject.com/term/watch/48015) by Julien Deveaux.
 
 SkinAndBones-Skeleton
-Slideshow
+Slideshow images - Dover (public domain)
 Multi-level Accordion was created by Ryan Bobrowski. http://codepen.io/rbobrowski/pen/likvA
 Skeleton was created by Dave Gamache for a better web. http://getskeleton.com/
 A Better Simple Slideshow http://leemark.github.io/better-simple-slideshow/
-
-
+Hammer.JS Copyright (c) 2014 Jorik Tangelder <j.tangelder@gmail.com>;
 
 ## Acknowledgement
 Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.

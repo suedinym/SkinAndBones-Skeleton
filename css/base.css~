@@ -6,15 +6,6 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
-
-  figure, figcaption  {
-	margin: 0;
-	padding: 0;
-	border: 0;
-
-} 
 
 
 /* Table of contents
@@ -23,6 +14,37 @@
 - Typography
 - Media Queries
 */
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+/*
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
 
 
 /* Base Styles
@@ -39,6 +61,15 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
+/* add class to any text or item to center*/
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.centertxt {
+	text-align: center;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -66,14 +97,141 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* The navigation bar */
+ul.top-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 2;
+}
+
+.top-bar li {
+    float: left;
+}
+
+.top-bar li a, .hamburger {
+    display: block;
+    color: white;
+    padding: 1.2rem;
+    text-decoration: none;
+}
+
+.home {width: 2rem;}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+.top-bar li a, .hamburger {
+      padding: .66em;
+      font-size: .75em;}  
+}
+
+/* Main content */
+.main {
+    margin-top: 3rem; } /*Add a top margin to avoid content overlay  by the top nav*/
+    
+    /* #Logo
+================================================== */
+
+.logo {
+	background: #fff;
+	margin: 2rem 5rem 0 3rem;
+	float: left;
+	border-radius: 10%;
+	box-shadow: .5rem .5rem 1rem #414a49;
+}
+.logo-header {
+	margin-top: 5rem;
+	margin-bottom: .5rem;
+}
+@media only screen and (max-width: 479px) {
+	.logo-header h1 {font-size: 3rem;}
+	.logo {display: none;}
+}
+
+/* sliding side navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+{-webkit-animation:opac 0.8s;animation:opac 0.8s}
+/* The side navigation menu */
+.sidenav {
+	margin-top: 3rem;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top of the slideshow, but below the nav bar */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 6rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+}
+@media only screen and (max-width: 479px) {
+	.sidenav .closebtn {
+    top: .75rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+
+
+/* On smaller screens, where height is less than 450px, 
+change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding: 1.5rem 0 1.5rem 0;}
+    .sidenav a {font-size: 1.5rem;}
+}
+/* #Footer
+================================================== */
+
+footer p, footer a {
+	color: #4d4d4d;
+	font-size: 1.2rem;
+}
+footer a:hover {
+	color: #BBBBBB;
+}
+.copyright, .copyright a {
+	font-size: .9rem;
+}
+
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #b3b3b3; }
 
 
 /* Media Queries
@@ -85,6 +243,11 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+	
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+@media screen and (max-height: 450px) {}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}

@@ -258,10 +258,7 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
 
-@media screen and (max-height: 450px) {}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}

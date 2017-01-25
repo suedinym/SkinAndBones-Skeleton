@@ -13,6 +13,7 @@
 } 
  
 .bss-slides{
+  margin-top: 30px; /*to make room for the top fixed nav*/
   position: relative;
   display: block;    
 }
@@ -33,7 +34,7 @@
   backface-visibility: hidden;
 }
 .bss-slides .bss-show{
-  z-index: 2;
+  z-index: inherit; /* was 2; - changed so the slideshow goes under the top-bar*/
 }
 .bss-slides .bss-show img{
   opacity: 1;
@@ -56,7 +57,7 @@
   transition: opacity 1.2s;
 }
 .bss-slides .bss-show figcaption{
-  z-index: 3;
+  z-index: inherit; /*was 3;*/
   opacity: 1;
 }
 .bss-slides figcaption a{
@@ -68,7 +69,7 @@
   background: #000;
   background: rgba(0,0,0, .6);
   top: 50%;
-  z-index: 4;
+  z-index: inherit; /*was 4;*/
   font-size: 2em;
   margin-top: -1.2em;
   opacity: .3;

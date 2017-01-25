@@ -6,14 +6,14 @@
 * Free to use under the Mozilla Public License, version 2.0
 * https://github.com/leemark/better-simple-slideshow/blob/gh-pages/LICENSE
 */
-/* #Reset margin on figure, so the slideshow lines up with the arrow tabs, sj. 
-Probably conflicting with normalize
+/* #Reset margin on figure, so the slideshow lines up with the arrow tabs, sj. */
 
   figure {
 	margin: 0;
 } 
- */
+ 
 .bss-slides{
+	margin-top: 30px; /*to make room for the top fixed nav*/
   position: relative;
   display: block;    
 }
@@ -34,7 +34,7 @@ Probably conflicting with normalize
   backface-visibility: hidden;
 }
 .bss-slides .bss-show{
-  z-index: 2;
+  z-index: inherit; /* was 2;*/
 }
 .bss-slides .bss-show img{
   opacity: 1;
@@ -57,7 +57,7 @@ Probably conflicting with normalize
   transition: opacity 1.2s;
 }
 .bss-slides .bss-show figcaption{
-  z-index: 3;
+  z-index: inherit; /*was 3;*/
   opacity: 1;
 }
 .bss-slides figcaption a{
@@ -69,7 +69,7 @@ Probably conflicting with normalize
   background: #000;
   background: rgba(0,0,0, .6);
   top: 50%;
-  z-index: 4;
+  z-index: inherit; /*was 4;*/
   font-size: 2em;
   margin-top: -1.2em;
   opacity: .3;

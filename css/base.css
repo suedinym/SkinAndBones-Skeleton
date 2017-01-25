@@ -17,7 +17,8 @@
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
 /*
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -151,52 +152,81 @@ ul.top-bar {
 }
 @media only screen and (max-width: 479px) {
 	.logo-header h1 {font-size: 3rem;}
+	.logo-header {margin-left: 2rem;}
 	.logo {display: none;}
 }
 
-/* sliding side navigation
+/* sliding  navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-{-webkit-animation:opac 0.8s;animation:opac 0.8s}
+
 /* The side navigation menu */
-.sidenav {
+#mySidenav {
 	margin-top: 3rem;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
+    padding-top: 6rem; /* Place content 60px from the top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The top navigation menu */
+#myTopNav {
+	 height: ; 0;  /* 0 height - change this with JavaScript */
+	 overflow-y: hidden;
+    width: 100%;  /* 100% Full-width */
+}
+.topNav-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The side navigation menu */
+.overlay {
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top of the slideshow, but below the nav bar */
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 6rem; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
+/* The side navigation menu links */
+.overlay a {
+ padding: 1rem 3rem;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #818181;
-    display: block;
-    transition: 0.3s
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
+.overlay a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+#mySidenav .closebtn {
     position: absolute;
     top: 1rem;
     right: 2.5rem;
     font-size: 3.5rem;
     margin-left: 5rem;
 }
+/* Position and style the close button (top right corner) */
+#myTopNav .closebtn {
+    position: absolute;
+    top: 3rem;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+}
 @media only screen and (max-width: 479px) {
-	.sidenav .closebtn {
+	.overlay .closebtn {
     top: .75rem;
     right: 1.5rem;
     font-size: 2.5rem;
@@ -207,8 +237,8 @@ ul.top-bar {
 /* On smaller screens, where height is less than 450px, 
 change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav {padding: 1.5rem 0 1.5rem 0;}
-    .sidenav a {font-size: 1.5rem;}
+    .overlay {padding: 1.5rem 0 1.5rem 0;}
+    .overlay a {font-size: 1.5rem;}
 }
 /* #Footer
 ================================================== */

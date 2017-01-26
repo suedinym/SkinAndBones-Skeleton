@@ -21,55 +21,58 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .accordion h1, #accordion {
-  padding: 15px 20px;
-  background-color: #224460; /* Dark blue*/
-  font-size: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: #262626; /* Darkest - 15%*/
+  font-size: 1.25em;
   font-weight: normal;
-  color: #aac096; /*#8aa970;  #aac096;#a3c289; good #bdd4ab;  #647e4e; #1abc9c;*/
+  color: white;
 }
 .accordion h1:hover {
-	background-color: #285071;
-  color: #4afcdc;
+	background-color: #666666; /* 40%*/
+  color: white;
 }
 
 .accordion h1:not(:last-of-type) {
-  border-bottom: 1px dotted #1abc9c;
+  border-bottom: 1px dotted #999999; /* 60%*/
 }
 .accordion div, .accordion p {
   display: none;
 }
 .accordion h2 {
-  padding: 5px 25px;
-  background-color: #8aa970; /*#aac096; #a3c289; #6a904a;  #647e4e;#1abc9c;*/
-  font-size: 1.1rem;
-  color: #333;
+  padding: .5rem 2.6rem;
+  background-color:  #404040; /* 25%*/
+  font-size: 1.5rem;
+  color: white;
 }
 .accordion h2:hover {
-  background-color:#aac096;  /* #8aa970;#09ab8b;*/
+  background-color:#666666; /* 40%*/
 }
 .accordion h3 {
-  padding: 5px 30px;
-  background-color: #e09f6f; /*#b94152;*/
-  font-size: .9rem;
-  color: #333; 
+  padding: .5rem 3rem;
+  background-color:#8c8c8c; /* 55%*/
+  font-size: 1.5rem;
+  color: white; 
 }
 .accordion h3:hover {
-  background-color: #e9b896; /*#a93142;*/
+  background-color: #a6a6a6; /* 65%*/
 }
-/*.accordion h4 {
-  padding: 5px 35px;
-  background-color: #ffc25a;
-  font-size: .9rem;
-  color: #af720a; 
+.accordion div ul li a {
+  padding: .5rem 3rem;
+  list-style: none;
+  background-color: #bfbfbf; /* 75%*/
+  font-size: 1.4rem;
+  color: black; 
 }
-.accordion h4:hover {
-  background-color: #e0b040;
-}*/
+
+.accordion div ul li a:hover{
+  background-color: #d9d9d9; /* 85%*/
+  color: black; 
+}
 .accordion p {
-  padding: 15px 35px;
-  background-color: #a1c2de;
+  padding: 1.5rem 3.5rem;
+  background-color: #f2f2f2;
   font-family: "Georgia";
-  font-size: .8rem;
+  font-size: 1.2rem;
   color: #333;
   line-height: 1.3rem;
 }

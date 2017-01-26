@@ -47,6 +47,8 @@ Two modal version at http://jsfiddle.net/3Vykc/
 		color: red;
 	}
 	
+	.gal1 { width: 25%;}
+	
 	@media screen and (max-width: 479px) {
 		.modalDialog>div {
 			width: 80%
@@ -67,13 +69,7 @@ img.enlarge {
     left: 75%;
     width: 28px;}
     
-.emr-side-by-side {width: 85%;}
-.emr-side-by-side1 {width: 85%;}
+.side-by-side {width: 85%;}
+.side-by-side1 {width: 85%;}
   
 
-@media screen and (max-width: 479px) {
-	.modalDialog > div {width: 80%}
-	.modalDialog img {width:75%;}
-	
- 
-}

@@ -8,7 +8,7 @@ function closeTopNav() {
 }
 /* Sliding side navigation */
 function openSideNav() {
-    document.getElementById("slidingSideNav").style.width = "40%";
+    document.getElementById("slidingSideNav").style.width = "45%";
 }
 
 function closeSideNav() {

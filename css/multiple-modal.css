@@ -47,6 +47,8 @@ Two modal version at http://jsfiddle.net/3Vykc/
 		color: red;
 	}
 	
+	.gal1 { width: 40%;}
+	
 	@media screen and (max-width: 479px) {
 		.modalDialog>div {
 			width: 80%

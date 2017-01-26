@@ -40,6 +40,8 @@ Skeleton/
 ├── fonts/
 └── images/
     └── favicon.ico, logo.png
+      ├── gallery/
+      │   └── images 1 thru 10
       ├── icons/
       |  └── enlarge.svg, info.png
       └── slides/
@@ -95,7 +97,8 @@ Slideshow images - Dover (public domain)
 Multi-level Accordion was created by Ryan Bobrowski. http://codepen.io/rbobrowski/pen/likvA
 Skeleton was created by Dave Gamache for a better web. http://getskeleton.com/
 A Better Simple Slideshow http://leemark.github.io/better-simple-slideshow/
-Hammer.JS Copyright (c) 2014 Jorik Tangelder <j.tangelder@gmail.com>;
+Hammer.JS Copyright (c) 2014 Jorik Tangelder <j.tangelder@gmail.com>
+Modals are based on the article "Creating a modal window with HTML5 & CSS3" at Webdesigner Depot by KEENAN PAYNE. http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
 
 ## Acknowledgement
 Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Gallary | Single Modal</title>
+  <meta name="description" content="">
+  <meta name="author" content="sue" >
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <link rel="stylesheet" href="../css/normalize.css">  
+  <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/base.css"> 
+    <link rel="stylesheet" href="../css/multiple-modal.css">
+  
+         
+ <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+ <!-- Header - fixed top menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header>
+<div>
+<ul class="top-bar">
+  
+  <li><a href="index.html"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
+  <li><a href="#project1">Item 1</a></li>
+  <li><a href="#project2">Item 2</a></li> 
+  <li><a href="#project3">Item 3</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<br class="clear">
+<hr>
+ <div class="container">
+ 
+  		<!-- Single css modal
+    ================================================== -->
+
+		<h1>Image Gallery - Single Image</h1>
+		<div>
+			<h2 class="centertxt">Basic Layout (horizontal)</h2>
+			<div class="eight columns view-detail">
+			<h2>Proposed Horizontal Interface</h2><!-- modal one -->
+			<!-- Trigger the Modal -->
+			<a href="#openModal1"><img class="enlarge" src="../images/icons/enlarge.svg"></a> <img class="side-by-side" src="../images/emr/main-horizontal.jpg"></div><!-- The Modal -->
+			<!-- note: id is anchor  -->
+			<div class="modalDialog" id="openModal1">
+				<div><!-- The Close Button -->
+				<a class="modal-close" href="#close">&times;</a>
+				<h2>Proposed Horizontal Interface</h2><img alt="" src="../images/emr/main-horizontal.jpg"></div>
+			</div><!-- end modal 1-->
+			</div>
+  </div>
+  <!-- end container -->
+  <br class="clear">
+  <hr>
+	<!-- Footer Container
+    ================================================== -->
+	<footer>
+		<div class="footer-container centertxt">
+			<p><!-- Unless otherwise noted, all photography and artwork on this website is copyrighted and is not to be used without the permission of the copyright holder.<br> -->
+			&copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
+			All Rights Reserved</p>
+		</div>
+	</footer><!-- end footer container -->
+  
+  
+
+	<!-- Slideshow js
+================================================== -->
+<script src="js/site.js"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

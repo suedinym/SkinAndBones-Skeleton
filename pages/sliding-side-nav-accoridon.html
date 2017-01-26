@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Sliding Side Navigation</title>
+  <meta name="description" content="">
+  <meta name="author" content="sue" >
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <link rel="stylesheet" href="../css/normalize.css">  
+  <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/base.css"> 
+   <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
+    <link rel="stylesheet" href="../css/accordion.css">
+  
+         
+ <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Required for Accordion -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+<body>
+ <!-- Header - fixed top menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header>
+<div>
+<ul class="top-bar">
+  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
+  <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+  <li><a href="#project1">Item 1</a></li>
+  <li><a href="#project2">Item 2</a></li> 
+  <li><a href="#project3">Item 3</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</header>
+ <!-- sliding side navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <a href="#">Clients</a> -->
+  
+  <!-- The overlay -->
+ <!-- Overlay content -->
+<div id="slidingSideNav" class="overlay">
+  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a>
+  <div class="side-overlay-content">
+  <!-- ACCORDION
+    ================================================== -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="accordion">Shop the Collection</h1>
+	<aside class="accordion">
+		<h1>Starter & Gift</h1>
+		<div>
+			<h2>Mugs & Cups</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-mug8.html">8 oz Mug</a>
+					</li>
+					<li>
+						<a href="by-item-mug-flare.html">Flare Mug</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Easy Gifts</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="placeholder.html">Gift Certificates</a>
+					</li>
+					<li>
+						<a href="wedding-registry.html">Wedding Registry</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Shop by Pattern</h1>
+		<div>
+			<h2>In-Stock</h2>
+			<div>
+				<h3>Country</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-placeholder.html">Horse</a>
+						</li>
+						<li>
+							<a href="by-pattern-placeholder.html">Cow</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Coastal</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Traditional</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Special Order</h2>
+			<div>
+				<h3>Skier</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Fishing</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>Shop by Item</h1>
+		<div>
+			<h2>Mugs & Cups</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-mug8.html">8 oz Mug</a>
+					</li>
+					<li>
+						<a href="by-item-mug-flare.html">Flare Mug</a>
+					</li>
+					<li>
+						<a href="by-item-mug-flare.html">8 oz Julep</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Plates</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">11" plate</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Bowls</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Serving ware</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">Platters</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">Serving Bowls</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">Tea Pots</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Kitchenware</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Discounted</h1>
+		<div>
+			<ul>
+				<li>
+					<a href="by-item-placeholder.html">item</a>
+				</li>
+				<li>
+					<a href="by-item-placeholder.html">item</a>
+				</li>
+			</ul>
+		</div>
+		<h1>Custom</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+	</aside>
+</body>
+</html>
+  </div>
+</div>
+  
+</div>
+<header>
+<div class="logo-header">
+			<img class="logo" src="../images/logo.png">
+			<h1>Skin and Bones Skeleton</h1>
+					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
+			</header>
+		</div><br class="clear">
+<hr>
+ <div class="container">
+ <div class="main">
+  		<!-- A Better Simple Slideshow Used here
+    ================================================== -->
+		<div class="sixteen columns">
+			<div class="bss-slides num1" tabindex="1">
+				<figure>
+					<img src="../images/slides/skel-slide1.jpg" width="100%">
+					<figcaption>
+						Anterior
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/slides/skel-slide2.jpg" width="100%">
+					<figcaption>
+						Right Side
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/slides/skel-slide3.jpg" width="100%">
+					<figcaption>
+						Posterior
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/slides/skel-slide4.jpg" width="100%">
+					<figcaption>
+						Left Side
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		
+		<!-- slideshow  end-->
+		 <hr>
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- end container -->
+  <hr>
+	<!-- Footer Container
+    ================================================== -->
+	<footer>
+		<div class="footer-container centertxt">
+			<p><!-- Unless otherwise noted, all photography and artwork on this website is copyrighted and is not to be used without the permission of the copyright holder.<br> -->
+			&copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
+			All Rights Reserved</p>
+		</div>
+	</footer><!-- end footer container -->
+  
+  
+
+	<!-- Slideshow js
+================================================== -->
+<script src="../js/site.js"></script>
+<script src="../js/accordion.js"></script>
+	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
+	<script src="../js/better-simple-slideshow.min.js">	</script> 
+	<script>
+	var opts = {
+	   auto : {
+	       speed : 3500, 
+	       pauseOnHover : true
+	   },
+	   fullScreen : false, 
+	   swipe : true
+	};
+	makeBSS('.num1', opts);
+
+	var opts2 = {
+	   auto : false,
+	   fullScreen : true,
+	   swipe : true
+	};
+	makeBSS('.num2', opts2);
+	</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

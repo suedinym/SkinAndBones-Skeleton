@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Sliding Side-Push Navigation</title>
+  <title>Sliding Side Navigation</title>
   <meta name="description" content="">
   <meta name="author" content="sue" >
 
@@ -23,10 +23,12 @@
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
+    <link rel="stylesheet" href="../css/accordion.css">
   
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,7 +41,7 @@
 <header>
 <div>
 <ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openPushNav()">&#9776;</span></li>
+  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="#project1">Item 1</a></li>
   <li><a href="#project2">Item 2</a></li> 
@@ -55,27 +57,204 @@
   <!-- The overlay -->
  <!-- Overlay content -->
 <div id="slidingSideNav" class="overlay">
-  <a href="javascript:void(0)" class="sideClosePushbtn" onclick="closePushNav()">&times;</a>
+  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a>
   <div class="side-overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+  <!-- ACCORDION
+    ================================================== -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="accordion">Shop the Collection</h1>
+	<aside class="accordion">
+		<h1>Starter & Gift</h1>
+		<div>
+			<h2>Mugs & Cups</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-mug8.html">8 oz Mug</a>
+					</li>
+					<li>
+						<a href="by-item-mug-flare.html">Flare Mug</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Easy Gifts</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="placeholder.html">Gift Certificates</a>
+					</li>
+					<li>
+						<a href="wedding-registry.html">Wedding Registry</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Shop by Pattern</h1>
+		<div>
+			<h2>In-Stock</h2>
+			<div>
+				<h3>Country</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-placeholder.html">Horse</a>
+						</li>
+						<li>
+							<a href="by-pattern-placeholder.html">Cow</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Coastal</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Traditional</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Special Order</h2>
+			<div>
+				<h3>Skier</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+				<h3>Fishing</h3>
+				<div>
+					<ul>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+						<li>
+							<a href="by-pattern-nonstock-placeholder.html">item</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>Shop by Item</h1>
+		<div>
+			<h2>Mugs & Cups</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-mug8.html">8 oz Mug</a>
+					</li>
+					<li>
+						<a href="by-item-mug-flare.html">Flare Mug</a>
+					</li>
+					<li>
+						<a href="by-item-mug-flare.html">8 oz Julep</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Plates</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">11" plate</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Bowls</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Serving ware</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">Platters</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">Serving Bowls</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">Tea Pots</a>
+					</li>
+				</ul>
+			</div>
+			<h2>Kitchenware</h2>
+			<div>
+				<ul>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+					<li>
+						<a href="by-item-placeholder.html">item</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<h1>Discounted</h1>
+		<div>
+			<ul>
+				<li>
+					<a href="by-item-placeholder.html">item</a>
+				</li>
+				<li>
+					<a href="by-item-placeholder.html">item</a>
+				</li>
+			</ul>
+		</div>
+		<h1>Custom</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+	</aside>
+</body>
+</html>
   </div>
 </div>
   
-
-<div id="main-push">
+</div>
 <header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
 			<h1>Skin and Bones Skeleton</h1>
-					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5></div>
+					<h5>Based on <a href="http://getskeleton.com"> Skeleton - Version 2.0.4</a></h5>
 			</header>
-		<br class="clear">
+		</div><br class="clear">
 <hr>
  <div class="container">
-
+ <div class="main">
   		<!-- A Better Simple Slideshow Used here
     ================================================== -->
 		<div class="sixteen columns">
@@ -117,7 +296,7 @@
       </div>
     </div>
     </div>
-  
+  </div>
   <!-- end container -->
   <hr>
 	<!-- Footer Container
@@ -128,8 +307,6 @@
 			&copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
 			All Rights Reserved</p>
 		</div>
-		</div>
-		
 	</footer><!-- end footer container -->
   
   
@@ -137,6 +314,7 @@
 	<!-- Slideshow js
 ================================================== -->
 <script src="../js/site.js"></script>
+<script src="../js/accordion.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 
 	<script>

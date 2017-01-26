@@ -37,16 +37,16 @@
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header>
-<div>
-<ul class="top-bar">
-  
-  <li><a href="index.html"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
+<div class="top-header-bar dkgry">
+	<ul>
+  <li><a href="index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="#project1">Item 1</a></li>
   <li><a href="#project2">Item 2</a></li> 
   <li><a href="#project3">Item 3</a></li>
   <li><a href="#contact">Contact</a></li>
 </ul>
-</div>
+		</div>
+
 
 <br class="clear">
 <hr>
@@ -56,12 +56,12 @@
     ================================================== -->
 
 		<h1 class="centertxt" >Image Gallery - Single Image</h1>
-		<div>
-			<h2 class="centertxt">Basic Layout (horizontal)</h2>
+		<div class="center">
+			<h2 class="centertxt">Skull</h2>
 			<div class="view-detail">
 			<!-- modal one -->
 			<!-- Trigger the Modal -->
-			<a href="#openModal1"><img class="enlarge" src="../images/icons/enlarge.svg"></a> <img class="gal1 center" src="../images/gallery/image2.png"></div><!-- The Modal -->
+			<a href="#openModal1"><img class="enlarge" src="../images/icons/enlarge.svg"></a> <img class="gal1" src="../images/gallery/image2.png"></div><!-- The Modal -->
 			<!-- note: id is anchor  -->
 			<div class="modalDialog" id="openModal1">
 				<div><!-- The Close Button -->

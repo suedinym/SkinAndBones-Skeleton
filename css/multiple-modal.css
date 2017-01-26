@@ -47,7 +47,12 @@ Two modal version at http://jsfiddle.net/3Vykc/
 		color: red;
 	}
 	
-	.gal1 { width: 40%;}
+	.gal1 { width: 40%;
+	background: #fff;
+	margin: 2rem 5rem 0 3rem;
+	float: left;
+	border-radius: 10%;
+	box-shadow: .5rem .5rem 1rem #414a49}
 	
 	@media screen and (max-width: 479px) {
 		.modalDialog>div {

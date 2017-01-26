@@ -114,11 +114,16 @@ ul.top-bar {
     z-index: 2;
 }
 
-.top-bar li {
+.top-bar li, .top-header-bar li {
     float: left;
-}
-
-.top-bar li a, .hamburger {
+  }
+div.top-header-bar ul{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #414a49;}
+  
+.top-bar li a, .hamburger, .top-header-bar li a {
     display: block;
     color: white;
     padding: 1.2rem;
@@ -131,6 +136,11 @@ ul.top-bar {
 .top-bar li a, .hamburger {
       padding: .66em;
       font-size: .75em;}  
+}
+.top-header-bar{
+	display: inline-block;
+	width: 100%;
+	  background-color: tomato;
 }
 
 /* Main content */
@@ -241,7 +251,7 @@ ul.top-bar {
 }
 @media only screen and (max-width: 479px) {
 	.overlay {background-color: tomato;
-	margin-top: 1.5rem;}
+	margin-top: 1rem;}
 }
 
 /* #Footer

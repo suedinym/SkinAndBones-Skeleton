@@ -38,12 +38,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header>
 <div class="top-header-bar dkgry">
-	<ul>
-  <li><a href="index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="#project1">Item 1</a></li>
-  <li><a href="#project2">Item 2</a></li> 
-  <li><a href="#project3">Item 3</a></li>
-  <li><a href="#contact">Contact</a></li>
+<ul class="top-bar">
+  
+  <li><a href="index.html"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
+  <li><a href="pages/gallery1.html">Gallery 1</a></li>
+  <li><a href="pages/gallery2.html">Gallery 2</a></li> 
+  <li><a href="pages/gallery3.html">Gallery 3</a></li>
+  <li><a href="pages/gallery4.html">Gallery 4</a></li>
 </ul>
 		</div>
 
@@ -65,7 +66,7 @@
 					<div><!-- The Close Button -->
 					<a class="modal-close" href="#close">&times;</a>
 					<h2>Alas, poor Yorick!</h2>
-					<img alt="" src="../images/gallery/image.2png"></div>
+					<img alt="" src="../images/gallery/image2.png"></div>
 				</div><!-- end modal one -->
 				</div>
   </div>

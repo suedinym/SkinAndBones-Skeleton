@@ -41,10 +41,10 @@
 <ul class="top-bar">
   
   <li><a href="index.html"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="#project1">Item 1</a></li>
-  <li><a href="#project2">Item 2</a></li> 
-  <li><a href="#project3">Item 3</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="pages/gallery1.html">Gallery 1</a></li>
+  <li><a href="#project2">Gallery 2</a></li> 
+  <li><a href="#project3">Gallery 3</a></li>
+  <li><a href="#contact">Gallery 4</a></li>
 </ul>
 </div>
 

@@ -106,14 +106,13 @@ Two modal version at http://jsfiddle.net/3Vykc/
 		.modalDialog>div {
 			width: 80%
 		}
-	.gal1 {width: 85%;}
-	.open-modal {
-	position: absolute;
-   bottom:-3%;
-   left:  87%;
-    width: 10%;	
-	
-		
-	}
-		
+	.gal1, .gal2, .gal3, .gal4 {width: 80%;}
+	.open-modal, .open-modal-gal2, .open-modal-gal3, .open-modal-gal4 {
+position: absolute;
+   bottom:-4%;
+   left:  85%;
+    width: 12%;	
+    }	
+   
+    }
 

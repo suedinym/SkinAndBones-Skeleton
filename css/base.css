@@ -168,7 +168,80 @@ list-style-type: none;
 	.logo {display: none;}
 }
 
-/* sliding  navigation
+/* horizontal navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-nav {
+	margin: 0 auto;
+	padding: 1em 0 0 0;
+}
+
+/*this looks like clear fix, so I might not need it*/
+
+.main-nav:after {
+	content: ".";
+	display: block;
+	line-height: 1px;
+	font-size: 1px;
+	clear: both;
+}
+ul.nav-horiz-a, ul.nav-horiz-b {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1em;
+}
+ul.nav-horiz-a li, ul.nav-horiz-b li {
+	display: block;
+	float: left;
+	width: 12.5%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.nav-horiz-a li a, ul.nav-horiz-b li a {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	background: linear-gradient(#a6a6a5, #414a49);
+	/* background: #eaeaea;*/
+	border-width: 1px;
+	border-color: #ffe #aaab9c #ccc #fff;
+	border-style: solid;
+}
+.main-nav>ul.nav-horiz-a li a, .main-nav>ul.nav-horiz-b li a {
+	width: auto;
+}
+ul.nav-horiz-a li#active a, ul.nav-horiz-b li#active a {
+	background: linear-gradient(#c6c6c6, #eaeaea);
+	/*  background: #c6c6c6;*/
+	color: #800000;
+}
+ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a:hover, ul.nav-horiz-b li#active a:hover {
+	color: #777;
+	background: linear-gradient(#eaeaea, #c6c6c6);
+	/*background: #a6a6a5; */
+}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	/*body {background: darkred;}*/
+	ul.nav-horiz-a li, ul.nav-horiz-b li {font-size: 0.8em; }
+	.logo {display: none;}
+	}
+
+	@media only screen and (max-width: 767px) {
+		/*body {background: teal;}*/
+		ul.nav-horiz-a li, ul.nav-horiz-b li { width: 25%;}
+   
+	}
+
+
+/* sliding  vertical navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #slidingTopNav.overlay {

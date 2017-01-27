@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Gallary | Side by side images</title>
+	<meta content="" name="description">
+	<meta content="sue" name="author"><!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"><!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link href="../css/skeleton.css" rel="stylesheet">
+	<link href="../css/base.css" rel="stylesheet">
+	<link href="../css/multiple-modal.css" rel="stylesheet"><!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="../images/favicon.png" rel="icon" type="image/png">
+</head>
+<body>
+	<!-- Header - fixed top menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<header>
+		<div class="top-header-bar dkgry">
+			<ul>
+				<li>
+					<a href="../index.html"><img alt="Home" class="home" src="../images/icons/home.svg"></a>
+				</li>
+				<li>
+					<a href="#project1">Item 1</a>
+				</li>
+				<li>
+					<a href="#project2">Item 2</a>
+				</li>
+				<li>
+					<a href="#project3">Item 3</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div><br class="clear">
+		<hr>
+		<div class="container">
+			<!-- columns should be the immediate child of a .row -->
+			<div class="row">
+				<div class="one-half column view-detail"><!-- Modals start here
+    ================================================== -->
+				<h3 class="modal-head centertxt">Skull</h3><!-- modal one --><a href="#openModal1"><img class="open-modal-gal2" src="../images/icons/enlarge.svg"></a> <img class="gal2" src="../images/gallery/image3.png"></div><!-- The Modal -->
+				<!-- note: id is anchor  -->
+				<div class="modalDialog" id="openModal1">
+					<div><!-- The Close Button -->
+					<a class="modal-close" href="#close">&times;</a>
+					<h2>Alas, poor Yorick!</h2><img alt="" src="../images/gallery/image3.png"></div>
+				</div><!-- end modal one -->
+				<div class="one-half column view-detail"><!-- Modals start here
+    ================================================== -->
+				<!-- modal two -->
+				<h3 class="modal-head centertxt">Skull</h3><!-- modal one --><a href="#openModal2"><img class="open-modal-gal2" src="../images/icons/enlarge.svg"></a> <img class="gal2" src="../images/gallery/image1.png"></div><!-- The Modal -->
+				<!-- note: id is anchor  -->
+				<div class="modalDialog" id="openModal2">
+					<div><!-- The Close Button -->
+					<a class="modal-close" href="#close">&times;</a>
+					<h2>Alas, poor Yorick!</h2><img alt="" src="../images/gallery/image1.png"></div>
+				</div><!-- end modal two -->
+			</div><!-- end row one -->
+		</div><!-- end container -->
+		<br class="clear">
+		<hr>
+		<!-- Footer Container
+    ================================================== -->
+		<footer>
+			<div class="footer-container centertxt">
+				<p><!-- Unless otherwise noted, all photography and artwork on this website is copyrighted and is not to be used without the permission of the copyright holder.<br> -->
+				 &copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
+				All Rights Reserved</p>
+			</div>
+		</footer><!-- end footer container -->
+		<!-- Slideshow js
+================================================== -->
+		<script src="js/site.js">
+		</script> <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		 
+	</header>
+</body>
+</html>

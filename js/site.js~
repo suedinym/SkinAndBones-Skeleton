@@ -6,12 +6,22 @@ function openTopNav() {
 function closeTopNav() {
     document.getElementById("slidingTopNav").style.height = "0%";
 }
+
+
 /* Sliding side navigation */
-function openSideNav() {
-    document.getElementById("slidingSideNav").style.width = "40%";
+ function openSideNav() {
+if (window.matchMedia("(min-width: 400px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+  document.getElementById("slidingSideNav").style.width = "40%";
+} else {
+  /* the viewport is less than 400 pixels wide */
+  document.getElementById("slidingSideNav").style.width = "100%";
 }
+}
+
+
+
 
 function closeSideNav() {
     document.getElementById("slidingSideNav").style.width = "0%";
 }
-

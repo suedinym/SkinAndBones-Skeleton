@@ -229,8 +229,7 @@ ul.nav-horiz-a li#active a, ul.nav-horiz-b li#active a {
 ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a:hover, ul.nav-horiz-b li#active a:hover {
 	color: #777;
 	background: linear-gradient(#eaeaea, #c6c6c6);
-	/*background: #a6a6a5; */
-}
+	}
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 
@@ -307,15 +306,15 @@ ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a
 }
 .sideClosebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 7%;
+    right: 4%;
+    font-size: 6rem;
 }
 
 .sideClosePushbtn {
     position: absolute;
     top: 3%;
-    right: 3%;
+    right: %;
     font-size: 60px;
 }
 #main-push {

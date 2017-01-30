@@ -306,15 +306,15 @@ ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a
 }
 .sideClosebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 5%;
+    right: 5%;
+    font-size: 6rem;
 }
 
 .sideClosePushbtn {
     position: absolute;
     top: 3%;
-    right: 3%;
+    right: %;
     font-size: 60px;
 }
 #main-push {

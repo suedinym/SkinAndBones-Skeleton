@@ -67,6 +67,12 @@
 			</header>
 		</div><br class="clear">
 <hr>
+<!-- Breadcrumbs
+    ================================================== -->
+    <ul class="breadcrumb">
+  <li><a href="../index.html">Home</a></li>
+  <li>Sliding Top Nav</li>
+ </ul>
  <div class="container">
  <div class="main">
   		<!-- A Better Simple Slideshow Used here

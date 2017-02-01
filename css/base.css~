@@ -7,16 +7,32 @@
 * 12/29/2014
 */
 
+/*
+* SkinAndBones-Skeleton
+* Copyright 2015 -2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
 /*Font Awesome by Dave Gandy - http://fontawesome.io*/
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Reset & Basics (commented out, for debugging)
 - Base Styles
 - Typography
+- Header
+- Logo
+- Find and Share icons
+- Horizontal Navigation
+- Breadcrumbs
+- Sliding top and vertical navigation
+- Footer
+- Misc
 - Media Queries
 */
 
-/* #Reset & Basics (Inspired by E. Meyers) The reset is in here for debugging purposes
+/* #Reset & Basics (Inspired by E. Meyers) The reset is in here for debugging purposes - Most of Skin and bones was originally worked up in the version of Skeleton with the reset, instead of normalize, and occasionally it creates problems with the previously written code. It's probably not necessary anymore, but there are few websites built from this template still being transferred to the new Skeleton, so for the moment the reset is still here.
 ================================================== */
 /*
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -134,9 +150,16 @@ list-style-type: none;
 .home {width: 2rem;}
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+	
+	.hamburger {
+		 font-size: 1em;
+	}
+	.top-bar li a {
+		 font-size: .75em;
+	}
 .top-bar li a, .hamburger {
-      padding: .66em;
-      font-size: .75em;}  
+      padding: .66rem .5rem;
+     }  
 }
 .top-header-bar{
 	display: inline-block;
@@ -155,6 +178,7 @@ list-style-type: none;
 	background: #fff;
 	margin: 2rem 5rem 0 3rem;
 	float: left;
+	width: 10%;
 	border-radius: 10%;
 	box-shadow: .5rem .5rem 1rem #414a49;
 	z-index: -1;
@@ -163,6 +187,14 @@ list-style-type: none;
 	margin-top: 5rem;
 	margin-bottom: .5rem;
 }
+.logo-header h1 {
+	font-size: 4.5rem;
+	padding-top: 1.25rem;
+	}
+.logo-header h5 {
+	padding-top: 0;
+}
+
 @media only screen and (max-width: 479px) {
 	.logo-header h1 {font-size: 3rem;}
 	.logo-header {margin-left: 2rem;}
@@ -186,8 +218,7 @@ list-style-type: none;
 .find-us-bar ul li {
 	display: inline;
    padding: 0 1rem;
-    float: right;
-    list-style: none;
+   list-style: none;
   }
 
 .find-us-bar ul li a {
@@ -199,6 +230,19 @@ list-style-type: none;
 .find-us-bar a:hover {
     color: #bfbfbf;
 }
+
+@media only screen and (min-width: 479px){
+	.find-us-bar ul li {
+		 float: right;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.find-us-bar ul li a {
+    font-size: 1.75rem;
+   }
+}
+
 
 
 /* horizontal navigation
@@ -233,7 +277,7 @@ ul.nav-horiz-a li, ul.nav-horiz-b li {
 ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {
 	display: block;
 	float: left;
-	width: 16.6%;
+	width: 16.6666%;
    margin: 0;
 	padding: 0;
 	text-align: center;
@@ -292,7 +336,7 @@ ul.breadcrumb li+li:before {
     content: ">\00a0";
 }
 ul.breadcrumb li a {
-	 color: #66b3ff;
+	 color: #1a8cff;
     text-decoration: none;
 }
 ul.breadcrumb li a:hover {
@@ -353,37 +397,25 @@ ul.breadcrumb li a:hover {
     color: #f1f1f1;
 }
 
-.topClosebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
+
 .sideClosebtn {
     position: absolute;
-    top: 5%;
+    top: 3%;
     right: 5%;
     font-size: 6rem;
 }
 
-.sideClosePushbtn {
-    position: absolute;
-    top: 3%;
-    right: %;
-    font-size: 60px;
-}
-#main-push {
-    transition: margin-left .5s;
-    padding: 16px;
-}
 @media screen and (max-height: 450px) {
   .overlay {
    overflow-y: auto;}
   .overlay a {font-size: 2rem;}
-}
+ }
 @media only screen and (max-width: 479px) {
-	.overlay {background-color: tomato;
-	margin-top: 1rem;}
+	.overlay {
+	margin-top: 2rem;}
+	.sideClosebtn {
+    right: 2%;
+}
 }
 
 /* #Footer

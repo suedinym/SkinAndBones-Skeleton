@@ -17,11 +17,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 /* percentages listed next to the background colors are from the chart here: http://www.w3schools.com/colors/colors_picker.asp  Listing them this way should make it relatively easy to swap them out for a different base color (hue), while maintaining the same color values.*/
-
+ #accordion { 
+   padding: 0 0 0 2rem;
+   margin: 0;
+   font-size: 1.75em;}
+.accordion h1 { 
+   padding: 1.5rem 2rem;
+   font-size: 1.25em;
+}
 .accordion h1, #accordion {
-  padding: 1.5rem 2rem;
-  background-color: #262626; /* Darkest - 15%*/
-  font-size: 1.25em;
+   background-color: #262626; /* Darkest - 15%*/
+  
   font-weight: normal;
   color: white;
 }
@@ -63,7 +69,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .accordion div ul li a:hover{
-  background-color: #d9d9d9; /* 85%*/
+  background-color: #d9d9d9; /*lightest 85%*/
   color: #1a8cff; 
 }
 .accordion p {

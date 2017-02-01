@@ -82,6 +82,9 @@
 								<li>
 									<a href="http://codepen.io/rbobrowski/pen/likvA" target="blank">Codepen - Multi-level Accordion</a>
 								</li>
+									<li>
+									<a href="http://codepen.io/suedinym/pen/ggewjb" target="blank">Responsive Sliding Accordion Side Nav </a>
+								</li>
 							</ul>
 						</div>
 						<h3>Sliding Overlay</h3>
@@ -198,8 +201,8 @@
 				<li class="nav-six">
 					<a href="pages/nav8.html">8 Tab Nav</a>
 				</li>
-				<li class="pages/nav-six">
-					<a href="nav6.html">6 Tab Nav</a>
+				<li class="nav-six">
+					<a href="pages/nav6.html">6 Tab Nav</a>
 				</li>
 			</ul>
 			<ul class="nav-horiz-b">
@@ -241,9 +244,15 @@
 	<hr>
 	<div class="container">
 		<div class="main">
+		<div class="row">
+		<div class="one-third column">
+					<h5>SkinAndBones-Skeleton</h5>
+					<p>SkinAndBones-Skeleton is a template based on the Skeleton boilerplate. It was developed to flesh out the basic boilerplate with common features of a basic website, such as a slideshow and navigation, turning it into more of a UI framework, for use in quickly comping up a functional website.</p>
+
+				</div>
 			<!-- A Better Simple Slideshow Used here
     ================================================== -->
-			<div class="sixteen columns">
+			<div class="one-third column">
 				<div class="bss-slides num1" tabindex="1">
 					<figure>
 						<img src="images/slides/skel-slide1.jpg" width="100%">
@@ -270,12 +279,21 @@
 						</figcaption>
 					</figure>
 				</div>
+				<p>The basic Skeleton boilerplate is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid.</p>
 			</div><!-- slideshow  end-->
-			<hr>
-			<div class="row">
-				<div class="one-half column" style="margin-top: 5%">
-					<h4>Basic Page</h4>
-					<p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+				<div class="one-third column">
+					<h5>SkinAndBones-Skeleton adds:</h5>
+				
+				<ul>
+				<li>A Better Simple Slideshow</li>
+				<li>Two arrangements of horizontal navigation</li>
+				<li>Additional folders to aid in organization</li>
+				<li>Sliding top navigation</li>
+				<li>Gallery pages with a css modal</li>
+				<li>The grid and basic style codes are seperated</li>
+				<li>Side navigation with and without multilevel accordion menus</li>
+				
+				</ul>
 				</div>
 			</div>
 		</div>

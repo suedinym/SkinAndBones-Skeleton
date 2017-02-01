@@ -38,10 +38,17 @@ Two modal version at http://jsfiddle.net/3Vykc/
 	 
 	.modal-close {
 		color: black;
-		font-size: 40px;
+		font-size: 4rem;
 		position: absolute;
 		right: 5%;
 		text-decoration: none;
+	}
+	@media only screen and (max-width: 479px) {
+		.modal-close  {
+		padding: 0;
+		right: 3%;
+		top: -1%;
+		}
 	}
 	.modal-close:hover {
 		color: red;
@@ -111,7 +118,7 @@ Two modal version at http://jsfiddle.net/3Vykc/
 position: absolute;
    bottom:-4%;
    left:  85%;
-    width: 10%;	
+    width: 12%;	
     }	
    
     }

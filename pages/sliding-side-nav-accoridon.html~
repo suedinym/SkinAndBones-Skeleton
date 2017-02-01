@@ -43,18 +43,15 @@
 <div>
 <ul class="top-bar">
   <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
-    <li><a href="index.html"><img class="home" src="images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="pages/gallery1.html">Gallery 1</a></li>
-  <li><a href="pages/gallery2.html">Gallery 2</a></li> 
-  <li><a href="pages/gallery3.html">Gallery 3</a></li>
-  <li><a href="pages/gallery4.html">Gallery 4</a></li>
-</ul>
+   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
+  <li><a href="gallery1.html">Gallery 1</a></li>
+  <li><a href="gallery2.html">Gallery 2</a></li> 
+  <li><a href="gallery3.html">Gallery 3</a></li>
+  <li><a href="gallery4.html">Gallery 4</a></li>
 </div>
 </header>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <a href="#">Clients</a> -->
-  
   <!-- The overlay -->
  <!-- Overlay content -->
 <div id="slidingSideNav" class="overlay">
@@ -62,190 +59,154 @@
   <div class="side-overlay-content">
   <!-- ACCORDION
     ================================================== -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1 id="accordion">Nav header</h1>
+	<h1 id="accordion">Accordion Side Nav</h1>
 	<aside class="accordion">
-		<h1>Starter & Gift</h1>
+		<h1>Category A</h1>
 		<div>
-			<h2>Mugs & Cups</h2>
+			<h2>Sub Category</h2>
 			<div>
 				<ul>
 					<li>
-						<a href="by-item-mug8.html">8 oz Mug</a>
+						<a href="#">A Link</a>
 					</li>
 					<li>
-						<a href="by-item-mug-flare.html">Flare Mug</a>
+						<a href="#">Another Link</a>
 					</li>
 				</ul>
 			</div>
-			<h2>Easy Gifts</h2>
+			<h2>Sub Category</h2>
 			<div>
 				<ul>
 					<li>
-						<a href="placeholder.html">Gift Certificates</a>
+						<a href="#">A Link</a>
 					</li>
 					<li>
-						<a href="wedding-registry.html">Wedding Registry</a>
+						<a href="#">Another Link</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<h1>Shop by Pattern</h1>
+		<h1>Category B</h1>
 		<div>
-			<h2>In-Stock</h2>
+			<h2>Sub Category</h2>
 			<div>
-				<h3>Country</h3>
+				<h3>Another Sub Category</h3>
 				<div>
 					<ul>
 						<li>
-							<a href="by-pattern-placeholder.html">Horse</a>
+							<a href="#">A Link</a>
 						</li>
 						<li>
-							<a href="by-pattern-placeholder.html">Cow</a>
+							<a href="#">Another Link</a>
 						</li>
 					</ul>
 				</div>
-				<h3>Coastal</h3>
+				<h3>Another Sub Category</h3>
 				<div>
 					<ul>
 						<li>
-							<a href="by-pattern-placeholder.html">item</a>
+							<a href="#">A Link</a>
 						</li>
 						<li>
-							<a href="by-pattern-placeholder.html">item</a>
+							<a href="#">Another Link</a>
 						</li>
 					</ul>
 				</div>
-				<h3>Traditional</h3>
+				<h3>Another Sub Category</h3>
 				<div>
 					<ul>
 						<li>
-							<a href="by-pattern-placeholder.html">item</a>
+							<a href="#">A Link</a>
 						</li>
 						<li>
-							<a href="by-pattern-placeholder.html">item</a>
+							<a href="#">Yet Another Link</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<h2>Special Order</h2>
+			<h2>Sub Category</h2>
 			<div>
-				<h3>Skier</h3>
+				<h3>Another Sub Category</h3>
 				<div>
 					<ul>
 						<li>
-							<a href="by-pattern-nonstock-placeholder.html">item</a>
+							<a href="#">A Link</a>
 						</li>
 						<li>
-							<a href="by-pattern-nonstock-placeholder.html">item</a>
+							<a href="#">Another Link</a>
 						</li>
 					</ul>
 				</div>
-				<h3>Fishing</h3>
+				<h3>Another Sub Category</h3>
 				<div>
 					<ul>
 						<li>
-							<a href="by-pattern-nonstock-placeholder.html">item</a>
+							<a href="#">A Link</a>
 						</li>
 						<li>
-							<a href="by-pattern-nonstock-placeholder.html">item</a>
+							<a href="#">Another Link</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<h1>Shop by Item</h1>
+		<h1>Category C</h1>
 		<div>
-			<h2>Mugs & Cups</h2>
+			<h2>Sub Category</h2>
 			<div>
 				<ul>
-					<li>
-						<a href="by-item-mug8.html">8 oz Mug</a>
-					</li>
-					<li>
-						<a href="by-item-mug-flare.html">Flare Mug</a>
-					</li>
-					<li>
-						<a href="by-item-mug-flare.html">8 oz Julep</a>
-					</li>
+			<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
 				</ul>
 			</div>
-			<h2>Plates</h2>
+			<h2>Sub Category</h2>
 			<div>
 				<ul>
-					<li>
-						<a href="by-item-placeholder.html">11" plate</a>
-					</li>
-					<li>
-						<a href="by-item-placeholder.html">item</a>
-					</li>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
 				</ul>
 			</div>
-			<h2>Bowls</h2>
+			<h2>Sub Category</h2>
 			<div>
 				<ul>
-					<li>
-						<a href="by-item-placeholder.html">item</a>
-					</li>
-					<li>
-						<a href="by-item-placeholder.html">item</a>
-					</li>
-					<li>
-						<a href="by-item-placeholder.html">item</a>
-					</li>
-				</ul>
-			</div>
-			<h2>Serving ware</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="by-item-placeholder.html">Platters</a>
-					</li>
-					<li>
-						<a href="by-item-placeholder.html">Serving Bowls</a>
-					</li>
-					<li>
-						<a href="by-item-placeholder.html">Tea Pots</a>
-					</li>
-				</ul>
-			</div>
-			<h2>Kitchenware</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="by-item-placeholder.html">item</a>
-					</li>
-					<li>
-						<a href="by-item-placeholder.html">item</a>
-					</li>
+				<li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
+						<li>
+							<a href="#">Yet Another Link</a>
+						</li>
 				</ul>
 			</div>
 		</div>
-		<h1>Discounted</h1>
+		<h1>Category D</h1>
 		<div>
 			<ul>
 				<li>
-					<a href="by-item-placeholder.html">item</a>
-				</li>
-				<li>
-					<a href="by-item-placeholder.html">item</a>
-				</li>
+							<a href="#">A Link</a>
+						</li>
+						<li>
+							<a href="#">Another Link</a>
+						</li>
 			</ul>
 		</div>
-		<h1>Custom</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+		<h1>Category E</h1>
+		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
 	</aside>
-</body>
-</html>
   </div>
 </div>
   
-</div>
+
 <header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
@@ -254,6 +215,13 @@
 			</header>
 		</div><br class="clear">
 <hr>
+
+<!-- Breadcrumbs
+    ================================================== -->
+    <ul class="breadcrumb">
+  <li><a href="../index.html">Home</a></li>
+  <li>Accordion Sliding Side Nav</li>
+ </ul>
  <div class="container">
  <div class="main">
   		<!-- A Better Simple Slideshow Used here

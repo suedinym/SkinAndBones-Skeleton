@@ -23,13 +23,10 @@
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
-    <link rel="stylesheet" href="../css/accordion.css">
   
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- Required for Accordion -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,171 +39,36 @@
 <header>
 <div>
 <ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
+  <li>	<a href="#openSlidingSideNav"><span class="hamburger">&#9776;</span></a>
    <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
   <li><a href="gallery1.html">Gallery 1</a></li>
   <li><a href="gallery2.html">Gallery 2</a></li> 
   <li><a href="gallery3.html">Gallery 3</a></li>
   <li><a href="gallery4.html">Gallery 4</a></li>
+  </ul>
 </div>
 </header>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- The overlay -->
+  
+  	<div class="modalDialog" id="openSlidingSideNav">  
+  	<!-- The overlay -->
  <!-- Overlay content -->
 <div id="slidingSideNav" class="overlay">
-  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a>
+ 
   <div class="side-overlay-content">
-  <!-- ACCORDION
-    ================================================== -->
-	<h1 id="accordion">Accordion Side Nav</h1>
-	<aside class="accordion">
-		<h1>Category A</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="#">A Link</a>
-					</li>
-					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="#">A Link</a>
-					</li>
-					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category B</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h1>Category C</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-			<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category D</h1>
-		<div>
-			<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-			</ul>
-		</div>
-		<h1>Category E</h1>
-		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
-	</aside>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
   </div>
+</div>
+					<div><!-- The Close Button -->
+					<a class="sideClosebtn" href="#close">&times;</a>
+				
+			
+				</div><!-- end modal one -->
+				
 </div>
   
 
@@ -218,13 +80,6 @@
 			</header>
 		</div><br class="clear">
 <hr>
-
-<!-- Breadcrumbs
-    ================================================== -->
-    <ul class="breadcrumb">
-  <li><a href="../index.html">Home</a></li>
-  <li>Accordion Sliding Side Nav</li>
- </ul>
  <div class="container">
  <div class="main">
   		<!-- A Better Simple Slideshow Used here
@@ -286,7 +141,6 @@
 	<!-- Slideshow js
 ================================================== -->
 <script src="../js/site.js"></script>
-<script src="../js/accordion.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 
 	<script>

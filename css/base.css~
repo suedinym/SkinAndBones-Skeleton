@@ -7,6 +7,7 @@
 * 12/29/2014
 */
 
+/*Font Awesome by Dave Gandy - http://fontawesome.io*/
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -167,6 +168,38 @@ list-style-type: none;
 	.logo-header {margin-left: 2rem;}
 	.logo {display: none;}
 }
+    /* #find and share icons
+================================================== */
+.find-us-bar {
+	padding: .6rem;
+    width: 100%;
+    text-align: center;
+    background-color:  #414a49;
+    background-image: url(../images/bg/tile-blk.jpg);
+   overflow: auto;
+ }
+ .find-us-bar ul {
+  	margin: 0;
+ 	padding: 0 2rem 0 0;
+ }
+
+.find-us-bar ul li {
+	display: inline;
+   padding: 0 1rem;
+    float: right;
+    list-style: none;
+  }
+
+.find-us-bar ul li a {
+    color: white;
+    font-size: 2.25rem;
+   
+}
+
+.find-us-bar a:hover {
+    color: #bfbfbf;
+}
+
 
 /* horizontal navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -201,7 +234,7 @@ ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {
 	display: block;
 	float: left;
 	width: 16.6%;
-	margin: 0;
+   margin: 0;
 	padding: 0;
 	text-align: center;
 }
@@ -243,7 +276,29 @@ ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a
 		ul.nav-horiz-a li.nav-six, ul.nav-horiz-b li.nav-six {width: 50%;}
    
 	}
+	/* breadcrumbs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+ul.breadcrumb {
+    padding: 0;
+     margin: .25rem 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: .8rem;
+    color: black;
+    content: ">\00a0";
+}
+ul.breadcrumb li a {
+	 color: #66b3ff;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #0059b3;
+    text-decoration: underline;
+}
 
 /* sliding  vertical navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -306,8 +361,8 @@ ul.nav-horiz-a li a:hover, ul.nav-horiz-a li#active a:hover, ul.nav-horiz-b li a
 }
 .sideClosebtn {
     position: absolute;
-    top: 7%;
-    right: 4%;
+    top: 5%;
+    right: 5%;
     font-size: 6rem;
 }
 

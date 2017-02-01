@@ -9,16 +9,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * {
   margin: 0; padding: 0;
 }
-/*body {
-  font-size: 100%;
-   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}*/
 
 .accordion h1, h2, h3, h4{
   cursor: pointer;
   	margin: 0;
 	padding: 0;
 }
+
+/* percentages listed next to the background colors are from the chart here: http://www.w3schools.com/colors/colors_picker.asp  Listing them this way should make it relatively easy to swap them out for a different base color (hue), while maintaining the same color values.*/
 
 .accordion h1, #accordion {
   padding: 1.5rem 2rem;
@@ -39,7 +37,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display: none;
 }
 .accordion h2 {
-  padding: .5rem 2.6rem;
+  padding: .5rem 4rem;
   background-color:  #404040; /* 25%*/
   font-size: 1.5rem;
   color: white;
@@ -48,7 +46,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-color:#666666; /* 40%*/
 }
 .accordion h3 {
-  padding: .5rem 3rem;
+  padding: .5rem 6rem;
   background-color:#8c8c8c; /* 55%*/
   font-size: 1.5rem;
   color: white; 
@@ -57,16 +55,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-color: #a6a6a6; /* 65%*/
 }
 .accordion div ul li a {
-  padding: .5rem 3rem;
+  padding: .5rem 8rem;
   list-style: none;
   background-color: #bfbfbf; /* 75%*/
   font-size: 1.4rem;
-  color: black; 
+  color: #0059b3; 
 }
 
 .accordion div ul li a:hover{
-  background-color: #d9d9d9; /* 85%*/
-  color: black; 
+  background-color: #d9d9d9; /*lightest 85%*/
+  color: #1a8cff; 
 }
 .accordion p {
   padding: 1.5rem 3.5rem;

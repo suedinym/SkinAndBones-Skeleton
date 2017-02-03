@@ -32,7 +32,7 @@
 - Media Queries
 */
 
-/* #Reset & Basics (Inspired by E. Meyers) The reset is in here for debugging purposes - Most of Skin and bones was originally worked up in the version of Skeleton with the reset, instead of normalize, and occasionally it creates problems with the previously written code. It's probably not necessary anymore, but there are few websites built from this template still being transferred to the new Skeleton, so for the moment the reset is still here.
+/* #Reset & Basics (Inspired by E. Meyers) The reset is in here for debugging purposes - Most of Skin and bones was originally worked up in the version of Skeleton with the reset, instead of normalize, and occasionally it creates problems with the previously written code. It's probably not necessary anymore, but there are few projects built from this template still being transferred to the new Skeleton, so for the moment the reset is still here.
 ================================================== */
 /*
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,

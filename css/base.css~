@@ -89,6 +89,15 @@ body {
 .centertxt {
 	text-align: center;
 }
+/* login */
+li.right {
+		float: right;
+			display: block;
+	color: #fff;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	font-size: 1.75rem;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -398,12 +407,11 @@ ul.breadcrumb li a:hover {
 }
 
 
-.sideClosebtn {
-    position: absolute;
-    top: 3%;
+a.sideClosebtn {
+	  position: absolute;
+    top: 2%;
     right: 5%;
-    font-size: 6rem;
-}
+    font-size: 2em;}
 
 @media screen and (max-height: 450px) {
   .overlay {

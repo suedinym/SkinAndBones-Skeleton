@@ -77,6 +77,7 @@ SkinAndBones-Skeleton adds:
 - Additional folders to aid in organization
 - Gallery pages with a css modal
 - The grid and basic style codes are seperated
+- A login modal
 
 # A Better Simple Slideshow
 This is a fairly basic slideshow, written in javascript. This is a dual-purpose project, it's meant to be something you can drop right into your page and use if you so choose, but it's also meant as an example/tutorial script showing how to build a simple DIY slideshow from scratch on your own. [Here is a tutorial/walkthrough](http://themarklee.com/2014/10/05/better-simple-slideshow/).

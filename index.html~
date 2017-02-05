@@ -15,6 +15,7 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/skeleton.css" rel="stylesheet">
 	<link href="css/base.css" rel="stylesheet">
+	<link href="css/multiple-modal.css" rel="stylesheet">
 	<link href="css/simple-slideshow-styles.css" rel="stylesheet">
 	<link href="css/accordion.css" rel="stylesheet"><!--  Font Awesome by Dave Gandy - http://fontawesome.io -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- JavaScript
@@ -32,6 +33,9 @@
 	<header>
 		<div>
 			<ul class="top-bar">
+			<li class="right">
+					<a href="#openLoginModal"><i class="fa fa-user"></i></a>
+				</li>
 				<li><span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
 				<li>
 					<a href="index.html"><img alt="Home" class="home" src="images/icons/home.svg"></a>
@@ -282,7 +286,7 @@
 				<p>The basic Skeleton boilerplate is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid.</p>
 			</div><!-- slideshow  end-->
 				<div class="one-third column">
-					<h5>SkinAndBones-Skeleton adds:</h5>
+					<h5>Additions:</h5>
 				
 				<ul>
 				<li>A Better Simple Slideshow</li>
@@ -308,6 +312,22 @@
 			All Rights Reserved</p>
 		</div>
 	</footer><!-- end footer container -->
+	<!-- login Modal starts here    ================================================== -->
+<div class="modalDialog" id="openLoginModal">
+	<div class="login-container">
+		<div class="img-container"><img alt="Avatar" class="login-avatar" src="images/gallery/image2.png"></div>
+		<div class="login-info">
+			<form action="">
+				<label><b>Username</b></label> <input name="uname" placeholder="Enter Username" required="" type="text">
+				<label><b>Password</b></label> <input name="psw" placeholder="Enter Password" required="" type="password">
+				<button class="login" type="submit">Login</button>
+				<div class="login-bottom-container">
+					<span class="psw">Forgot <a href="#">password?</a> &nbsp; &#124; &nbsp; Create <a href="#">Account</a></span>
+				</div><a class="login-modal-close" href="#close">Cancel</a> <input checked="checked" type="checkbox"> Remember me
+			</form>
+		</div>
+	</div>
+</div>
 	<!-- Slideshow js
 ================================================== -->
 	<script src="js/site.js">

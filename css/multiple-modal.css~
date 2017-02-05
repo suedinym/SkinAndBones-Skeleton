@@ -1,6 +1,12 @@
 /* Modals are based on the tutorial article "Creating a modal window with HTML5 & CSS3" at Webdesigner Depot by KEENAN PAYNE. http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
 Two modal version at http://jsfiddle.net/3Vykc/
 */
+/*
+* Multiple photo css modal
+* Copyright 2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
 
 /*#Single or Mulitple modal base css
 ================================================== */
@@ -122,4 +128,78 @@ position: absolute;
     }	
    
     }
+     /* #LOGIN FORM
+================================================== */
+
+.login-container {
+	width: 25%;
+	border: 10px double #999;
+	border-radius: 15%;
+ }
+.img-container {
+	text-align: center;
+}
+img.login-avatar {
+	width: 25%;
+	border-radius: 50%;
+	margin-top: 5%;
+}
+.login {
+	background-color:#404040; 
+	color: white;
+	padding: 10px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 5px;
+	clear: both;
+}
+
+.login:hover {background-color:#595959; }
+
+.login-info input[type="text"], .login-info input[type="password"] {
+	background-color: #fff;
+	width: 95%;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	height: 20px;
+	padding: 6px 0 2px 5px;
+	margin: 8px;
+}
+.login-info input[type="text"]:focus, .login-info input[type="password"]:focus {
+	border: 1px solid #10a7d5;
+	background-color: #f2f2f2;
+	outline: 0;
+}
+.login-info {padding-bottom: 5%;}
+
+.login-modal-close {
+	width: auto;
+	font-size: 15px;
+	padding: 5px 10px;
+	background-color: #808080;
+	color: white;
+	text-decoration: none;
+	border-radius: 5%;
+	float: right;
+}
+.login-modal-close:hover {
+	background-color: #e09f6f;
+}
+.login-bottom-container {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+span.psw {
+	padding-top: 16px;
+}
+@media screen and (max-width: 479px) {
+	span.psw {
+	font-size: 12px;
+}
+}
+
+
 

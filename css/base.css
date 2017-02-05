@@ -89,6 +89,11 @@ body {
 .centertxt {
 	text-align: center;
 }
+.credits {background-color: #262626;
+font-family: 'Cherry Cream Soda', cursive;
+/*
+font-family: 'Righteous', cursive;*/
+}
 
 
 /* Typography

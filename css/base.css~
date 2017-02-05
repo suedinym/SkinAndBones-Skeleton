@@ -89,15 +89,7 @@ body {
 .centertxt {
 	text-align: center;
 }
-/* login */
-li.right {
-		float: right;
-			display: block;
-	color: #fff;
-	padding: 0 1.5rem;
-	text-decoration: none;
-	font-size: 1.75rem;
-}
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -175,7 +167,15 @@ list-style-type: none;
 	width: 100%;
 	background-color: #414a49;
 }
-
+/* login */
+li.right {
+		float: right;
+			display: block;
+	color: #fff;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	font-size: 1.75rem;
+}
 /* Main content */
 .main {
     margin-top: 3rem; } /*Add a top margin to avoid content overlay  by the top nav*/

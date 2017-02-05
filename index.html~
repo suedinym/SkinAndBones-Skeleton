@@ -170,6 +170,9 @@
 							<li>
 								<a href="http://jsfiddle.net/3Vykc/" target="blank">Multiple Modal</a>
 							</li>
+							<li>
+								<a href="http://codepen.io/suedinym/pen/MJXOqd" target="blank">Modal Login</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -309,7 +312,10 @@
 		<div class="footer-container centertxt">
 			<p><!-- Unless otherwise noted, all photography and artwork on this website is copyrighted and is not to be used without the permission of the copyright holder.<br> -->
 			 &copy; Copyright Holder 2017 <a href="http://getskeleton.com">www.getskeleton.com</a><br>
-			All Rights Reserved</p>
+			All Rights Reserved
+			<br>
+			<a href="credits.html">Credits</a>
+			</p>
 		</div>
 	</footer><!-- end footer container -->
 	<!-- login Modal starts here    ================================================== -->

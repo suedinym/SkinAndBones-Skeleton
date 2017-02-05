@@ -24,7 +24,7 @@ The original download includes Skeleton's CSS, Normalize CSS as a reset, a sampl
 
 ```
 Skeleton/
-├── index.html, and a placeholder.html
+├── index.html, a credits page, and a placeholder.html
 ├── js/
 │   ├── *better-simple-slideshow.js (Slideshow only requires one of these.)
 │   ├── *better-simple-slideshow.min.js (Slideshow only requires one of these.)

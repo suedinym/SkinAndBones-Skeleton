@@ -1,0 +1,70 @@
+/* #CSS Accordion (Codrops tutorial) https://tympanus.net/codrops/licensing/
+Skeletonization c. Susan Jensen 2017
+================================================== */
+.faq-container{
+	width: 100%;
+	margin: 10px auto 30px auto;
+	text-align: left;
+	border: solid 4px #d9d9d9; /*lightest 85%*/
+}
+.faq-container label{
+	font-weight: bold;
+	padding: 5px 20px;
+	position: relative;
+	z-index: 5;
+	display: block;
+	cursor: pointer;
+	font-size: 1.5rem;
+	background:#666666; /* 40%*/
+	border: 1px solid #ccc;
+	color: white;
+}
+.faq-container label:hover{
+	background: #8c8c8c; /* 55%*/
+}
+.faq-container input:checked + label,
+.faq-container input:checked + label:hover{
+	background: #404040; /* 25%*/
+	color: whitesmoke;
+	
+}
+.faq-container label:hover:after,
+.faq-container input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	background: transparent url(../images/arrow_down.png) no-repeat center center;	
+}
+.faq-container input:checked + label:hover:after{
+	background-image: url(../images/arrow_up.png);
+}
+.faq-container input{
+	display: none;
+}
+.faq-container article{
+	background: whitesmoke;
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 4;
+	transition: 0.3s;
+}
+
+.faq-container article p{
+	color: #000;
+	font-size: 1.4rem;
+	padding: 10px 20px 0 20px;
+	line-height: 1.2;
+	
+}
+.faq-container input:checked ~ article{
+	transition: 0.3s;
+}
+
+.faq-container input:checked ~ article {
+	height: 12rem;
+}

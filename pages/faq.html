@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Accordion Navigation</title>
+  <title>FAQ Page</title>
   <meta name="description" content="">
   <meta name="author" content="sue" >
 
@@ -22,15 +22,40 @@
    <link rel="stylesheet" href="../css/normalize.css">  
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
-   <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
-    <link rel="stylesheet" href="../css/accordion.css">
+     <link rel="stylesheet" href="../css/accordion.css">
+     <link rel="stylesheet" href="../css/faq-style.css">
   
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Required for Accordion -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	//For local link to accordion
+jQuery(document).ready(function() {
+$('a.open-local-faq').click(function(){
+    // get the #section from the URL
+    var hash = window.location.hash; 
+    // open accordion
+     $(hash).prop("checked", true);
+     //scroll
+   var accordionTop =  $(hash).closest('section');
+   $('html, body').animate({
+            scrollTop: $(accordionTop).offset().top
+        }, 500);
+    //    $('#slidingSideNav').style.width = "0%";
+  });
 
+	//for external Link to accordion -external links are on sliding-side-nav-accordion page
+    var hash = window.location.hash; 
+      $(hash).prop("checked", true);
+    var accordionTop =  $(hash).closest('section');
+   $('html, body').animate({
+            scrollTop: $(accordionTop).offset().top
+        }, 500);
+});
+
+</script> 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
@@ -40,14 +65,18 @@
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header>
-<div>
+<div class="top-header-bar dkgry">
 <ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
-   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="gallery1.html">Gallery 1</a></li>
-  <li><a href="gallery2.html">Gallery 2</a></li> 
-  <li><a href="gallery3.html">Gallery 3</a></li>
-  <li><a href="gallery4.html">Gallery 4</a></li>
+  
+   <li><a  href="../index.html">
+     <i class="fa fa-home fa-lg"></i>
+   </a></li>
+  <li><a href="../pages/gallery1.html">gallery 1</a></li>
+  <li><a href="../pages/gallery2.html">gallery 2</a></li> 
+  <li><a href="../pages/gallery3.html">gallery 3</a></li>
+  <li><a href="../pages/gallery4.html">gallery 4</a></li>
+  <li><a href="../pages/faq.html">FAQ page</a></li>
+</ul>
 </div>
 </header>
  <!-- sliding side navigation
@@ -64,29 +93,19 @@
 		<h1>Category A</h1>
 		<div>
 			<h2>Sub Category</h2>
-		<!-- 	<div>
+			<div>
 				<ul>
 					<li>
-						<a href="#">A Link</a>
+						<a class="open-local-faq" href="#ac-1">FAQ 1</a>
 					</li>
 					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div> -->
-				<div>
-				<ul>
-					<li>
-						<a  href="faq.html#ac-1">FAQ 1</a>
+						<a class="open-local-faq" href="#ac-2">FAQ 2</a>
 					</li>
 					<li>
-						<a href="faq.html#ac-2">FAQ 2</a>
+						<a class="open-local-faq" href="#ac-3">FAQ 3</a>
 					</li>
 					<li>
-						<a href="faq.html#ac-3">FAQ 3</a>
-					</li>
-					<li>
-						<a href="faq.html#ac-4">FAQ 4</a>
+						<a class="open-local-faq" href="#ac-4">FAQ 4</a>
 					</li>
 				</ul>
 			</div>
@@ -235,54 +254,53 @@
 		</div><br class="clear">
 <hr>
 
-<!-- Breadcrumbs
-    ================================================== -->
-    <ul class="breadcrumb">
-  <li><a href="../index.html">Home</a></li>
-  <li>Accordion Sliding Side Nav</li>
- </ul>
+
+ 
  <div class="container">
  <div class="main">
-  		<!-- A Better Simple Slideshow Used here
+   <div class="row">		
+   <!-- Accordion Faq
     ================================================== -->
 		<div class="sixteen columns">
-			<div class="bss-slides num1" tabindex="1">
-				<figure>
-					<img src="../images/slides/skel-slide1.jpg" width="100%">
-					<figcaption>
-						Anterior
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/slides/skel-slide2.jpg" width="100%">
-					<figcaption>
-						Right Side
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/slides/skel-slide3.jpg" width="100%">
-					<figcaption>
-						Posterior
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="../images/slides/skel-slide4.jpg" width="100%">
-					<figcaption>
-						Left Side
-					</figcaption>
-				</figure>
-			</div>
+		<section class="faq-container">
+			<!--start accordion one section 1 -->
+			
+			<div>
+				<input checked id="ac-1" name="accordion-1" type="radio"> <label for="ac-1">FAQ Question 1</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+			</div><!--start accordion one section 2 -->
+			<div>
+				<input id="ac-2" name="accordion-1" type="radio"> <label for="ac-2">FAQ Question 2</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+			</div><!--start accordion one section 3 -->
+			<div>
+				<input id="ac-3" name="accordion-1" type="radio"> <label for="ac-3">FAQ Question 3</label>
+				<article>
+					
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+			</div><!--start accordion one section 4 -->
+			<div>
+				<input id="ac-4" name="accordion-1" type="radio"> <label for="ac-4">FAQ Question 4</label>
+				<article>
+			
+			       <p>It is better to know some of the questions than all of the answers. -James Thurber</p>   
+			
+				</article>
+				</div>
+				</section>
+
 		</div>
-		
-		<!-- slideshow  end-->
-		 <hr>
-    <div class="row">
-      <div class="one-half column" style="margin-top: 5%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      
-      </div>
-    </div>
+		</div>
     </div>
   </div>
   <!-- end container -->

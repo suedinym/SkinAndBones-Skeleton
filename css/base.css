@@ -95,6 +95,8 @@ font-family: 'Cherry Cream Soda', cursive;
 font-family: 'Righteous', cursive;*/
 }
 
+.bss-slides{border: 6px solid #666;}
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -147,13 +149,15 @@ list-style-type: none;
     }
   
 .top-bar li a, .hamburger, .top-header-bar li a {
-    display: block;
+	float: left;
+    display: inline-block;
     color: white;
     padding: 1.2rem;
     text-decoration: none;
 }
 
-.home {width: 2rem;}
+.home {font-size: 1.5rem;
+color: white;}
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	
@@ -172,15 +176,21 @@ list-style-type: none;
 	width: 100%;
 	background-color: #414a49;
 }
+
 /* login */
 li.right {
+	margin: 0 10px 0 0;
+	padding: 0;
+
 		float: right;
 			display: block;
-	color: #fff;
-	padding: 0 1.5rem;
+	
+	
 	text-decoration: none;
-	font-size: 1.75rem;
+	/*font-size: 1.75rem;color: #fff;padding: 0 20px;*/
 }
+
+
 /* Main content */
 .main {
     margin-top: 3rem; } /*Add a top margin to avoid content overlay  by the top nav*/
@@ -361,21 +371,22 @@ ul.breadcrumb li a:hover {
 /* sliding  vertical navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#slidingTopNav.overlay {
+#slidingTopNav {
     height: 0%;
     width: 100%;
    
 }
+#slidingTopNav:target {height:100%;}
 
-#slidingSideNav.overlay {
+#slidingSideNav {
     height: 100%;
     width: 0%;
 }
+#slidingSideNav:target {width:40%;}
 
 .overlay { 
-    margin-top: 4.5rem;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     background-color: #262626; /* rgb(0,0,0);*/
@@ -411,7 +422,6 @@ ul.breadcrumb li a:hover {
     color: #f1f1f1;
 }
 
-
 a.sideClosebtn {
 	  position: absolute;
     top: 2%;
@@ -424,8 +434,8 @@ a.sideClosebtn {
   .overlay a {font-size: 2rem;}
  }
 @media only screen and (max-width: 479px) {
-	.overlay {
-	margin-top: 2rem;}
+	#slidingSideNav:target {width:100%;}
+
 	.sideClosebtn {
     right: 2%;
 }

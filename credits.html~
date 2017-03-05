@@ -16,7 +16,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/skeleton.css" rel="stylesheet">
-	<link href="css/skel-base.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
 	<link href="css/accordion.css" rel="stylesheet"><!--  Font Awesome by Dave Gandy - http://fontawesome.io -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- JavaScript
  
@@ -115,7 +115,20 @@
 							
 							</ul>
 						</div>
-					</div>
+						</div>
+						<h2>Accordion FAQ</h2>
+						<div>
+							<ul>
+								<li>
+									<a href="https://tympanus.net/codrops/2012/02/21/accordion-with-css3/" target="blank">Codrops CSS3 Radio Button Accordion </a>
+								</li>
+								<li>
+									<a href="https://tympanus.net/codrops/licensing/" target="blank">Codrops Licensing</a>
+								</li>
+							
+							</ul>
+						</div>
+					
 				</div>
 				<h1>Photo Display</h1>
 				<div>

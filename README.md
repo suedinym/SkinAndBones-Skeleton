@@ -33,6 +33,7 @@ Skeleton/
 │   └── *hammer.min.js
 ├── css/
 │   ├── *normalize.min.css
+│   ├── faq-style.css (Faq accordion)
 │   ├── accordion.css
 │   ├── multiple-modal.css
 │   ├── base.css
@@ -44,6 +45,7 @@ Skeleton/
 │   ├── gallery2.html
 │   ├── gallery3.html
 │   ├── gallery4.html
+│   ├── faq.html
 │   ├── nav6.html (Six tab horizontal navigation)
 │   ├── nav8.html (Eight tab horizontal navigation)
 │   ├── sliding-side-nav.html
@@ -51,7 +53,7 @@ Skeleton/
 │   └── sliding-top-nav.html
 ├── fonts/ (just a folder)
 └── images/
-    └── favicon.ico, logo.png
+    └── favicon.ico, logo.png, logo5.png, arrow_up.png, arrow_down.png
       ├── gallery/
       │   └── images 1 thru 10
       ├── icons/
@@ -117,6 +119,7 @@ Skeleton was created by Dave Gamache for a better web. http://getskeleton.com/
 A Better Simple Slideshow http://leemark.github.io/better-simple-slideshow/
 Hammer.JS Copyright (c) 2014 Jorik Tangelder <j.tangelder@gmail.com>
 Modals are based on the article "Creating a modal window with HTML5 & CSS3" at Webdesigner Depot by KEENAN PAYNE. http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
+Accordion with CSS3, based on Codrops article by Mary Lou https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
 ## Acknowledgement
 Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.

@@ -39,17 +39,36 @@
 <body>
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header>
-<div>
-<ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
-   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="gallery1.html">Gallery 1</a></li>
-  <li><a href="gallery2.html">Gallery 2</a></li> 
-  <li><a href="gallery3.html">Gallery 3</a></li>
-  <li><a href="gallery4.html">Gallery 4</a></li>
-</div>
-</header>
+<	<header>
+		<div>
+			<ul class="top-bar">
+			<li class="right">
+		 	<a href="#openLoginModal"><img class="bones" src="../images/icons/bones.png" alt=""></a> 
+				<!--	<a href="#openLoginModal"><i class="fa fa-user"></i></a> -->
+				</li>
+				<!-- <li><span class="hamburger" onclick="openSideNav()">&#9776;</span></li> -->
+				 <a  class="hamburger" href="#slidingSideNav">&#9776;</a> 
+				<li>
+					<a href="../index.html"><i class="home fa fa-home fa-lg" ></i><!-- <img alt="Home" class="home" src="images/icons/home.svg"> --></a>
+				</li>
+				<li>
+					<a href="../pages/gallery1.html">Gallery 1</a>
+				</li>
+				<li>
+					<a href="../pages/gallery2.html">Gallery 2</a>
+				</li>
+				<li>
+					<a href="../pages/gallery3.html">Gallery 3</a>
+				</li>
+				<li>
+					<a href="../pages/gallery4.html">Gallery 4</a>
+				</li>
+				<li>
+					<a href="../pages/faq.html">FAQ page</a>
+				</li>
+			</ul>
+		</div>
+	</header>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- The overlay -->
@@ -64,13 +83,29 @@
 		<h1>Category A</h1>
 		<div>
 			<h2>Sub Category</h2>
-			<div>
+		<!-- 	<div>
 				<ul>
 					<li>
 						<a href="#">A Link</a>
 					</li>
 					<li>
 						<a href="#">Another Link</a>
+					</li>
+				</ul>
+			</div> -->
+				<div>
+				<ul>
+					<li>
+						<a  href="faq.html#ac-1">FAQ 1</a>
+					</li>
+					<li>
+						<a href="faq.html#ac-2">FAQ 2</a>
+					</li>
+					<li>
+						<a href="faq.html#ac-3">FAQ 3</a>
+					</li>
+					<li>
+						<a href="faq.html#ac-4">FAQ 4</a>
 					</li>
 				</ul>
 			</div>

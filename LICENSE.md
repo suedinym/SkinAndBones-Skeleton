@@ -417,3 +417,26 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
       This Source Code Form is "Incompatible
       With Secondary Licenses", as defined by
       the Mozilla Public License, v. 2.0.
+/* #CSS Accordion (Codrops tutorial) https://tympanus.net/codrops/licensing/
+================================================== */
+The resources on Codrops can be used freely in personal and commercial projects. Please note, that most of the tutorials and resources are experimental and not ready for production, but made for inspiration and demonstration purpose only.
+
+The resources on Codrops can be used in websites, web apps and web templates intended for sale. You don’t have to link back to us if it vitiates your work but we appreciate any credit.
+
+You are not allowed to take our work “as-is” and sell it, redistribute or re-publish it, or sell “pluginized” versions of it.
+
+You can fork our GitHub repos if you’d like to contribute but please don’t republish demos.
+
+If you plan to create free WordPress, jQuery, Joomla, etc. plugins out of our scripts, please credit us in a fair way and link to the respective article on Codrops.
+
+Please, respect the licenses of the resources (audio, video or images) that we often use in our demos. We always indicate the license in the article and link to the owner/creator in both, article and demo.
+
+You are free to copy excerpts of our articles and publish references to our work, but don’t copy entire articles (e.g. RSS feed scraping), we put our heart into this work. Don’t re-publish our demos, article or our ZIP files, and don’t link directly to any ZIP file, link to the article instead.
+
+Regarding our freebies: you can use them in your personal or commercial projects with the exception of redistribution, republishing or sale of the item itself, parts of the item, or edited versions. If you’d like to improve templates, you can always contribute via GitHub.
+
+Please contact us, if you’d like to translate articles and re-publish them.
+
+Summarized, use it freely, integrate it, make it your own, but don’t copy and paste our work and sell it or claim that it’s yours, stay fair.
+
+Thank you for visiting Codrops, we hope you enjoy our work and find it useful!

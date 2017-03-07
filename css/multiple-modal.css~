@@ -124,7 +124,7 @@ Two modal version at http://jsfiddle.net/3Vykc/
 position: absolute;
    bottom:-4%;
    left:  85%;
-    width: 12%;	
+   	
     }	
    
     }
@@ -185,7 +185,7 @@ img.login-avatar {
 	float: right;
 }
 .login-modal-close:hover {
-	background-color: #e09f6f;
+	background-color: #a6a6a6;
 }
 .login-bottom-container {
 	text-align: center;

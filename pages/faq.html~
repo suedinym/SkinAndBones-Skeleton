@@ -25,7 +25,7 @@
      <link rel="stylesheet" href="../css/accordion.css">
      <link rel="stylesheet" href="../css/faq-style.css">
   
-         
+         	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Required for Accordion -->
@@ -33,18 +33,19 @@
 	<script>
 	//For local link to accordion
 jQuery(document).ready(function() {
-$('a.open-local-faq').click(function(){
-    // get the #section from the URL
-    var hash = window.location.hash; 
+
+$('.open-local-faq').click(function(){
+ // get the #section from the anchor clicked on.
+var href = $(this).attr('href');
+$(this).prop("hash");
     // open accordion
-     $(hash).prop("checked", true);
-     //scroll
-   var accordionTop =  $(hash).closest('section');
+     $(href).prop("checked", true);
+         //scroll
+   var accordionTop =  $(href).closest('section');
    $('html, body').animate({
             scrollTop: $(accordionTop).offset().top
-        }, 500);
-    //    $('#slidingSideNav').style.width = "0%";
-  });
+       }, 500);
+     });
 
 	//for external Link to accordion -external links are on sliding-side-nav-accordion page
     var hash = window.location.hash; 
@@ -58,187 +59,27 @@ $('a.open-local-faq').click(function(){
 </script> 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+	<link href="../images/favicon.png" rel="icon" type="image/png">
 
 </head>
 <body>
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header>
-<div>
+<div class="top-header-bar dkgry">
 <ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
-   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-
-</div>
-</header>
- <!-- sliding side navigation
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- The overlay -->
- <!-- Overlay content -->
-<div id="slidingSideNav" class="overlay">
-  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a>
-  <div class="side-overlay-content">
-  <!-- ACCORDION
-    ================================================== -->
-	<h1 id="accordion">Accordion Side Nav</h1>
-	<aside class="accordion">
-		<h1>Category A</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-					<li>
-						<a class="open-local-faq" href="#ac-1">FAQ 1</a>
-					</li>
-					<li>
-						<a class="open-local-faq" href="#ac-2">FAQ 2</a>
-					</li>
-					<li>
-						<a class="open-local-faq" href="#ac-3">FAQ 3</a>
-					</li>
-					<li>
-						<a class="open-local-faq" href="#ac-4">FAQ 4</a>
-					</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-					<li>
-						<a href="#">A Link</a>
-					</li>
-					<li>
-						<a href="#">Another Link</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category B</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-					</ul>
-				</div>
-				<h3>Another Sub Category</h3>
-				<div>
-					<ul>
-						<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<h1>Category C</h1>
-		<div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-			<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-				</ul>
-			</div>
-			<h2>Sub Category</h2>
-			<div>
-				<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-						<li>
-							<a href="#">Yet Another Link</a>
-						</li>
-				</ul>
-			</div>
-		</div>
-		<h1>Category D</h1>
-		<div>
-			<ul>
-				<li>
-							<a href="#">A Link</a>
-						</li>
-						<li>
-							<a href="#">Another Link</a>
-						</li>
-			</ul>
-		</div>
-		<h1>Category E</h1>
-		<p>'Tis not so deep as a well, nor so wide as a church-door; but 'tis enough,'twill serve: ask for me to-morrow, and you shall find me a grave man. </p>
-	</aside>
-  </div>
-</div>
   
+   <li><a  href="../index.html">
+     <i class="fa fa-home fa-lg"></i>
+   </a></li>
+  <li><a href="../pages/gallery1.html">gallery 1</a></li>
+  <li><a href="../pages/gallery2.html">gallery 2</a></li> 
+  <li><a href="../pages/gallery3.html">gallery 3</a></li>
+  <li><a href="../pages/gallery4.html">gallery 4</a></li>
+ 
+</ul>
+</div>
 
-<header>
 <div class="logo-header">
 			<img class="logo" src="../images/logo.png">
 			<h1>Skin and Bones Skeleton</h1>
@@ -246,6 +87,39 @@ $('a.open-local-faq').click(function(){
 			</header>
 		</div><br class="clear">
 <hr>
+		 <!-- Faq same page links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<div  class="faq-links">
+  
+				<ul class="faq-a">
+					<li>
+						<a class="open-local-faq" href="#ac-1">FAQ 1</a>
+					</li>
+					<li>
+						<a class="open-local-faq" href="#ac-2">FAQ 2</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-3">FAQ 3</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-4">FAQ 4</a>
+					</li>
+					</ul>
+					<ul class="faq-b">
+						<li>
+						<a class="open-local-faq" href="#ac-5">FAQ 5</a>
+					</li>
+					<li>
+						<a class="open-local-faq" href="#ac-6">FAQ 6</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-7">FAQ 7</a>
+					</li>
+					<li>
+						<a class="open-local-faq"  href="#ac-8">FAQ 8</a>
+					</li>
+				</ul>
+			</div>
 
 
  
@@ -312,7 +186,7 @@ $('a.open-local-faq').click(function(){
 
 	<!-- Slideshow js
 ================================================== -->
-<script src="../js/site.js"></script>
+ <!--  <script src="../js/site.js"></script>  -->  
 <script src="../js/accordion.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 

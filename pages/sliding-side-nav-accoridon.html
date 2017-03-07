@@ -25,7 +25,7 @@
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
     <link rel="stylesheet" href="../css/accordion.css">
   
-         
+         	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Required for Accordion -->
@@ -33,19 +33,16 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+	<link href="../images/favicon.png" rel="icon" type="image/png">
 
 </head>
 <body>
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<	<header>
+	<header>
 		<div>
 			<ul class="top-bar">
-			<li class="right">
-		 	<a href="#openLoginModal"><img class="bones" src="../images/icons/bones.png" alt=""></a> 
-				<!--	<a href="#openLoginModal"><i class="fa fa-user"></i></a> -->
-				</li>
+		
 				<!-- <li><span class="hamburger" onclick="openSideNav()">&#9776;</span></li> -->
 				 <a  class="hamburger" href="#slidingSideNav">&#9776;</a> 
 				<li>
@@ -63,9 +60,6 @@
 				<li>
 					<a href="../pages/gallery4.html">Gallery 4</a>
 				</li>
-				<li>
-					<a href="../pages/faq.html">FAQ page</a>
-				</li>
 			</ul>
 		</div>
 	</header>
@@ -74,7 +68,8 @@
   <!-- The overlay -->
  <!-- Overlay content -->
 <div id="slidingSideNav" class="overlay">
-  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a>
+ <!--  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> -->
+   <a class="sideClosebtn" href="#">&times;</a>
   <div class="side-overlay-content">
   <!-- ACCORDION
     ================================================== -->
@@ -320,7 +315,7 @@
 
 	<!-- Slideshow js
 ================================================== -->
-<script src="../js/site.js"></script>
+<!-- <script src="../js/site.js"></script> -->
 <script src="../js/accordion.js"></script>
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 

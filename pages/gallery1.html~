@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/base.css"> 
     <link rel="stylesheet" href="../css/multiple-modal.css">
-  
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
          
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,16 +40,17 @@
 <div class="top-header-bar dkgry">
 <ul class="top-bar">
   
-   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="gallery1.html">Gallery 1</a></li>
-  <li><a href="gallery2.html">Gallery 2</a></li> 
-  <li><a href="gallery3.html">Gallery 3</a></li>
-  <li><a href="gallery4.html">Gallery 4</a></li>
+   <li><a  href="../index.html">
+     <i class="fa fa-home fa-lg"></i>
+   </a></li>
+  <li><a href="../pages/gallery1.html">gallery 1</a></li>
+  <li><a href="../pages/gallery2.html">gallery 2</a></li> 
+  <li><a href="../pages/gallery3.html">gallery 3</a></li>
+  <li><a href="../pages/gallery4.html">gallery 4</a></li>
+  <li><a href="../pages/faq.html">FAQ page</a></li>
 </ul>
-		</div>
-
-
-<br class="clear">
+</div>
+</header>
 <hr>
 <div class="container">
 			<!-- columns should be the immediate child of a .row -->
@@ -59,14 +60,16 @@
     ================================================== -->
 				<h3 class="modal-head centertxt">Skull</h3>
 				<!-- modal one --><a href="#openModal1">
-				<img class="open-modal" src="../images/icons/enlarge.svg">
-				</a> <img class="gal1" src="../images/gallery/image2.png"></div><!-- The Modal -->
+					<i class="open-modal  fa fa-expand  fa-2x"></i>
+			<!-- 	<img class="open-modal" src="../images/icons/enlarge.svg"> -->
+				</a> <img class="gal1" src="../images/gallery/image2.png">
+				</div><!-- The Modal -->
 				<!-- note: id is anchor  -->
 				<div class="modalDialog" id="openModal1">
 					<div><!-- The Close Button -->
 					<a class="modal-close" href="#close">&times;</a>
 					<h2>Alas, poor Yorick!</h2>
-					<img alt="" src="../images/gallery/image2.png"></div>
+					<img class="skel-gal" alt="" src="../images/gallery/image2.png"></div>
 				</div><!-- end modal one -->
 				</div>
   </div>

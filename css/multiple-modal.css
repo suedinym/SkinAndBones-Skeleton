@@ -26,9 +26,12 @@ Two modal version at http://jsfiddle.net/3Vykc/
 		transition: opacity 400ms ease-in;
 		pointer-events: none;
 	}
-	.modalDialog img {
-		width: 95%;
-	}
+/*	.modalDialog img {
+			width: 95%;
+	
+	}*/
+	
+	img.skel-gal {width: 95%;}
 	.modalDialog:target {
 		opacity: 1;
 		pointer-events: auto;
@@ -86,18 +89,33 @@ Two modal version at http://jsfiddle.net/3Vykc/
 	.gal4 {width: 80%}
 	.view-detail {position: relative;}
 	
+	.fa-expand {
+text-decoration: none;
+padding:5px 7px;
+  background: 	 #f2f2f2;
+  border: 1px solid #999;
+ /* opacity: 0.7;*/
+  color: #666;
+    border-radius: 25%;
+    line-height: 0;
+}
 	.open-modal {
+	/*	background-color: white;
+		border: 1px solid #666;
+		padding: 5px;
+		color: #666;
+		font-size: 48px;*/
 	position: absolute;
-   bottom:-3%;
-   left:  70%;
-    width: 5%;	
+   bottom: 0;
+   left:  70%
+ 	
 	}
 	
 	.open-modal-gal2 {
 	position: absolute;
-   bottom:-4%;
+   bottom:-2%;
    left:  75%;
-    width: 8%;	
+   	
 	}
 	
 	
@@ -105,14 +123,14 @@ Two modal version at http://jsfiddle.net/3Vykc/
 	position: absolute;
    bottom:-3%;
    left:  87%;
-    width: 10%;	
+ 
 	}
 	
 	 .open-modal-gal4 {
 	position: absolute;
    bottom:-4%;
    left:  85%;
-    width: 14%;	
+  	
 	}
 	
 	@media screen and (max-width: 479px) {
@@ -124,7 +142,7 @@ Two modal version at http://jsfiddle.net/3Vykc/
 position: absolute;
    bottom:-4%;
    left:  85%;
-    width: 12%;	
+  	
     }	
    
     }
@@ -169,7 +187,7 @@ img.login-avatar {
 }
 .login-info input[type="text"]:focus, .login-info input[type="password"]:focus {
 	border: 1px solid #10a7d5;
-	background-color: #f2f2f2;
+	background-color: whitesmoke;
 	outline: 0;
 }
 .login-info {padding-bottom: 5%;}

@@ -16,6 +16,9 @@
   margin-top: 30px; /*to make room for the top fixed nav*/
   position: relative;
   display: block;    
+  line-height: 0;/*  added to take a bottom  gap out of the slideshow* sj
+  http://stackoverflow.com/posts/31445364/revisions
+  */
 }
 .bss-slides:focus{
  outline: 0;
@@ -126,3 +129,5 @@
     background: rgba(0,0,0,.4) url(../img/compress_ffffff_64.png);
     background-size: contain;
 }
+
+figcaption {line-height: 1.5;} /*added because removing the lineheight from .bss-slides took the lineheight off of the caption.*/

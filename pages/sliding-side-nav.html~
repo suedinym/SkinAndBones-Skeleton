@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../css/base.css"> 
    <link rel="stylesheet" href="../css/simple-slideshow-styles.css">
   
-         
+   	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">      
  <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -36,24 +36,39 @@
 <body>
  <!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header>
-<div>
-<ul class="top-bar">
-  <li>	<span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
-   <li><a href="../index.html"><img class="home" src="../images/icons/home.svg" alt="Home"></a></li>
-  <li><a href="gallery1.html">Gallery 1</a></li>
-  <li><a href="gallery2.html">Gallery 2</a></li> 
-  <li><a href="gallery3.html">Gallery 3</a></li>
-  <li><a href="gallery4.html">Gallery 4</a></li>
-  </ul>
-</div>
-</header>
+	<header>
+		<div>
+			<ul class="top-bar">
+			
+				<!-- <li><span class="hamburger" onclick="openSideNav()">&#9776;</span></li> -->
+				 <a  class="hamburger" href="#slidingSideNav">&#9776;</a> 
+				<li>
+					<a href="../index.html"><i class="home fa fa-home fa-lg" ></i><!-- <img alt="Home" class="home" src="images/icons/home.svg"> --></a>
+				</li>
+				<li>
+					<a href="../pages/gallery1.html">Gallery 1</a>
+				</li>
+				<li>
+					<a href="../pages/gallery2.html">Gallery 2</a>
+				</li>
+				<li>
+					<a href="../pages/gallery3.html">Gallery 3</a>
+				</li>
+				<li>
+					<a href="../pages/gallery4.html">Gallery 4</a>
+				</li>
+				<li>
+					<a href="../pages/faq.html">FAQ page</a>
+				</li>
+			</ul>
+		</div>
+	</header>
  <!-- sliding side navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- The overlay -->
  <!-- Overlay content -->
 <div id="slidingSideNav" class="overlay">
-  <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a>
+<!--   <a href="javascript:void(0)" class="sideClosebtn" onclick="closeSideNav()">&times;</a> --> <a class="sideClosebtn" href="#">&times;</a>
   <div class="side-overlay-content">
     <a href="#">About</a>
     <a href="#">Services</a>
@@ -137,7 +152,7 @@
 
 	<!-- Slideshow js
 ================================================== -->
-<script src="../js/site.js"></script>
+<!-- <script src="../js/site.js"></script> -->
 	<script src="../js/hammer.min.js">	</script><!-- for swipe support on touch interfaces -->
 	<script src="../js/better-simple-slideshow.min.js">	</script> 
 	<script>

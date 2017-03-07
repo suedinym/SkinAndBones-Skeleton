@@ -4,7 +4,7 @@
 	<!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
-	<title>Your page title here :)</title>
+	<title>SkinAndBones | Skeleton</title>
 	<meta content="" name="description">
 	<meta content="sue" name="author"><!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,14 +33,16 @@
 	<!-- Header - fixed top menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<header>
-		<div>
+		<div >
 			<ul class="top-bar">
 			<li class="right">
-					<a href="#openLoginModal"><i class="fa fa-user"></i></a>
+		 	<a href="#openLoginModal"><img class="bones" src="images/icons/bones.png" alt=""></a> 
+				<!--	<a href="#openLoginModal"><i class="fa fa-user"></i></a> -->
 				</li>
-				<li><span class="hamburger" onclick="openSideNav()">&#9776;</span></li>
+				<!-- <li><span class="hamburger" onclick="openSideNav()">&#9776;</span></li> -->
+				 <a  class="hamburger" href="#slidingSideNav">&#9776;</a> 
 				<li>
-					<a href="index.html"><img alt="Home" class="home" src="images/icons/home.svg"></a>
+					<a href="index.html"><i class="home fa fa-home fa-lg" ></i><!-- <img alt="Home" class="home" src="images/icons/home.svg"> --></a>
 				</li>
 				<li>
 					<a href="pages/gallery1.html">Gallery 1</a>
@@ -54,9 +56,7 @@
 				<li>
 					<a href="pages/gallery4.html">Gallery 4</a>
 				</li>
-				<li>
-					<a href="pages/faq.html">FAQ page</a>
-				</li>
+			
 			</ul>
 		</div>
 	</header><!-- sliding side navigation
@@ -64,7 +64,7 @@
 	<!-- The overlay -->
 	<!-- Overlay content -->
 	<div class="overlay" id="slidingSideNav">
-		<a class="sideClosebtn" href="javascript:void(0)" onclick="closeSideNav()">&times;</a>
+	<!-- 	<a class="sideClosebtn" href="javascript:void(0)" onclick="closeSideNav()">&times;</a> -->   <a class="sideClosebtn" href="#">&times;</a>
 		<div class="side-overlay-content">
 			<!-- ACCORDION
     ================================================== -->
@@ -225,24 +225,30 @@
 	<nav>
 		<div class="main-nav">
 			<ul class="nav-horiz-a">
-				<li id="active" class="nav-six">
+				<li id="active" >
 					<a href="index.html">Home</a>
 				</li>
-				<li class="nav-six">
+				<li >
 					<a href="pages/nav8.html">8 Tab Nav</a>
 				</li>
-				<li class="nav-six">
+				<li >
 					<a href="pages/nav6.html">6 Tab Nav</a>
+				</li>
+					<li >
+					<a href="pages/icons.html">Icon Bar</a>
 				</li>
 			</ul>
 			<ul class="nav-horiz-b">
-				<li class="nav-six">
+				<li >
+					<a href="pages/faq.html">FAQ Page</a>
+				</li>
+				<li >
 					<a href="pages/sliding-top-nav.html">Top Nav</a>
 				</li>
-				<li class="nav-six">
+				<li >
 					<a href="pages/sliding-side-nav.html">Side Nav</a>
 				</li>
-			<li class="nav-six">
+			<li >
 					<a href="pages/sliding-side-nav-accoridon.html">Accordion</a>
 				</li>
 			</ul>
@@ -283,6 +289,8 @@
 			<!-- A Better Simple Slideshow Used here
     ================================================== -->
 			<div class="one-third column">
+			<p>The basic Skeleton boilerplate is lightweight and simple. Skin And Bones Skeleton, not so much.</p>
+		
 				<div class="bss-slides num1" tabindex="1">
 					<figure>
 						<img src="images/slides/skel-slide1.jpg" width="100%">
@@ -309,7 +317,7 @@
 						</figcaption>
 					</figure>
 				</div>
-				<p>The basic Skeleton boilerplate is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid.</p>
+					<p>For links to more information on various added features, open the side navigation using the hamburger icon.</p>
 			</div><!-- slideshow  end-->
 				<div class="one-third column">
 					<h5>Additions:</h5>
@@ -359,8 +367,8 @@
 </div>
 	<!-- Slideshow js
 ================================================== -->
-	<script src="js/site.js">
-	</script> 
+<!-- 	<script src="js/site.js">
+	</script>  -->
 	<script src="js/accordion.js">
 	</script> 
 	<script src="js/hammer.min.js">
